@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>后湖片区 · 产业现状与区域联动分析</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  font-family:'Microsoft YaHei','PingFang SC',sans-serif;
+  background:#F0F4F8;color:#333;
+  padding:30px;
+  display:flex;flex-direction:column;align-items:center;
+}
+.page{
+  max-width:1200px;
+  width:100%;
+  background:#fff;
+  border-radius:16px;
+  box-shadow:0 4px 30px rgba(0,0,0,0.1);
+  overflow:hidden;
+}
+
+/* ===== 顶部标题 ===== */
+.top-banner{
+  background:linear-gradient(135deg,#1A3A5C,#2A5A7C);
+  color:#fff;padding:35px 40px 30px;
+  position:relative;overflow:hidden;
+}
+.top-banner::before{
+  content:'';position:absolute;top:-50%;right:-20%;
+  width:400px;height:400px;
+  background:rgba(255,255,255,0.04);
+  border-radius:50%;
+}
+.top-banner::after{
+  content:'';position:absolute;bottom:-30%;right:10%;
+  width:200px;height:200px;
+  background:rgba(255,107,53,0.08);
+  border-radius:50%;
+}
+.top-banner h1{font-size:26px;letter-spacing:3px;position:relative;z-index:1}
+.top-banner h1 small{font-size:13px;font-weight:normal;opacity:0.7;margin-left:12px;letter-spacing:1px}
+.top-banner .sub{font-size:13px;opacity:0.8;margin-top:6px;letter-spacing:1px;position:relative;z-index:1}
+.top-banner .tags{display:flex;gap:10px;margin-top:12px;flex-wrap:wrap;position:relative;z-index:1}
+.top-banner .tags span{
+  padding:4px 14px;border:1px solid rgba(255,255,255,0.25);
+  border-radius:15px;font-size:11px;letter-spacing:1px;
+  background:rgba(255,255,255,0.06);
+}
+
+/* ===== 主要内容区 ===== */
+.main-content{padding:30px}
+
+/* ===== 产业统计卡片行 ===== */
+.stat-row{display:flex;gap:15px;margin-bottom:25px;flex-wrap:wrap}
+.stat-card{
+  flex:1;min-width:160px;
+  background:#f8fafc;border-radius:10px;
+  padding:15px 18px;
+  border-left:4px solid #FF6B35;
+  box-shadow:0 1px 4px rgba(0,0,0,0.04);
+}
+.stat-card .num{font-size:28px;font-weight:bold;color:#1A3A5C}
+.stat-card .num .unit{font-size:14px;font-weight:normal;color:#888;margin-left:4px}
+.stat-card .label{font-size:12px;color:#777;margin-top:2px;letter-spacing:1px}
+.stat-card.green{border-left-color:#4A6741}
+.stat-card.blue{border-left-color:#2A5A7C}
+.stat-card.gold{border-left-color:#B8860B}
+.stat-card.red{border-left-color:#8B4513}
+
+/* ===== 两栏布局 ===== */
+.two-col{display:flex;gap:25px;margin-bottom:25px}
+.col-left{flex:1.4}
+.col-right{flex:1}
+
+/* ===== 产业地图区域 ===== */
+.map-section{
+  background:#f8fafc;border-radius:12px;
+  padding:20px;border:1px solid #e8ecf0;
+}
+.map-section h3{
+  font-size:14px;color:#1A3A5C;margin-bottom:12px;
+  padding-bottom:8px;border-bottom:2px solid #FF6B35;
+  display:flex;align-items:center;gap:8px;
+}
+.map-section h3 .badge{
+  font-size:10px;background:#FF6B35;color:#fff;
+  padding:2px 8px;border-radius:8px;font-weight:normal;
+}
+
+/* 3D轴测地图 */
+.iso-map{
+  position:relative;
+  width:100%;
+  height:450px;
+  background:linear-gradient(135deg,#e8edf3,#dde4ed);
+  border-radius:8px;
+  overflow:hidden;
+}
+
+/* 网格底纹 */
+.iso-map .grid{
+  position:absolute;top:0;left:0;right:0;bottom:0;
+  background-image:
+    linear-gradient(rgba(100,120,140,0.08) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(100,120,140,0.08) 1px,transparent 1px);
+  background-size:40px 40px;
+}
+
+/* 后湖水面 */
+.houhu-lake{
+  position:absolute;
+  width:200px;height:130px;
+  left:50%;top:50%;transform:translate(-50%,-50%);
+  background:linear-gradient(135deg,#7FB3D8,#A8D8EA);
+  border-radius:50% 50% 45% 45% / 40% 40% 55% 55%;
+  opacity:0.7;
+  box-shadow:inset 0 -10px 30px rgba(0,0,0,0.05);
+}
+.houhu-lake::after{
+  content:'后湖';position:absolute;
+  top:50%;left:50%;transform:translate(-50%,-50%);
+  font-size:18px;font-weight:bold;color:rgba(255,255,255,0.8);
+  letter-spacing:4px;text-shadow:0 1px 4px rgba(0,0,0,0.1);
+}
+
+/* 路网 */
+.road{position:absolute;background:rgba(200,180,160,0.5);z-index:1}
+.road.r1{width:4px;height:280px;left:20%;top:0;transform:rotate(15deg)}
+.road.r2{width:3px;height:300px;left:75%;top:0;transform:rotate(-10deg)}
+.road.r3{width:3px;height:250px;left:45%;top:0;transform:rotate(5deg)}
+.road.r4{position:absolute;height:4px;background:rgba(200,180,160,0.5);z-index:1}
+.road.r4{width:280px;left:5%;top:75%;transform:rotate(-8deg)}
+
+/* 产业分区 */
+.zone{
+  position:absolute;border-radius:12px;
+  display:flex;align-items:center;justify-content:center;
+  font-size:12px;font-weight:bold;letter-spacing:1px;
+  border:2px dashed;z-index:2;
+  transition:all .3s;cursor:pointer;
+}
+.zone:hover{transform:scale(1.03);z-index:5}
+.zone.core{
+  left:40%;top:35%;width:20%;height:22%;
+  border-color:#FF6B35;background:rgba(255,107,53,0.10);
+  color:#CC5530;
+}
+.zone.transition{
+  left:30%;top:28%;width:40%;height:40%;
+  border-color:#2A5A7C;background:rgba(42,90,124,0.06);
+  color:#1A4A6C;
+}
+.zone.edge{
+  left:15%;top:18%;width:70%;height:60%;
+  border-color:#8B7355;background:rgba(139,115,85,0.04);
+  color:#6A5A4A;border-style:solid;opacity:0.6;
+}
+.zone-label{
+  position:absolute;font-size:11px;font-weight:bold;
+  padding:3px 8px;border-radius:4px;z-index:3;
+}
+.zone-label.z1{
+  left:45%;top:60%;background:#FF6B35;color:#fff;
+}
+.zone-label.z2{
+  left:25%;top:25%;background:#2A5A7C;color:#fff;
+}
+.zone-label.z3{
+  left:12%;top:16%;background:#8B7355;color:#fff;opacity:0.7;
+}
+
+/* 产业POI标注点 */
+.poi{
+  position:absolute;width:36px;height:36px;
+  border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  font-size:16px;z-index:4;
+  box-shadow:0 2px 8px rgba(0,0,0,0.15);
+  cursor:pointer;transition:transform .2s;
+}
+.poi:hover{transform:scale(1.3);z-index:10}
+.poi::after{
+  content:attr(data-label);
+  position:absolute;top:40px;
+  white-space:nowrap;font-size:10px;font-weight:bold;
+  color:#444;background:rgba(255,255,255,0.92);
+  padding:2px 6px;border-radius:3px;
+  box-shadow:0 1px 4px rgba(0,0,0,0.1);
+  display:none;
+}
+.poi:hover::after{display:block}
+.poi.design{background:linear-gradient(135deg,#FF6B35,#FF8C5A);left:48%;top:42%}
+.poi.cafe{background:linear-gradient(135deg,#B8860B,#D4A84B);left:55%;top:48%}
+.poi.gallery{background:linear-gradient(135deg,#4A6741,#6A8F5A);left:40%;top:38%}
+.poi.studio{background:linear-gradient(135deg,#2A5A7C,#4A8AAC);left:52%;top:36%}
+.poi.shop{background:linear-gradient(135deg,#8B4513,#B06030);left:45%;top:50%}
+.poi.edu{background:linear-gradient(135deg,#6B4FA0,#8B6FC0);left:30%;top:35%}
+.poi.old{background:linear-gradient(135deg,#7A7A7A,#9A9A9A);left:60%;top:55%}
+
+/* 照片框 */
+.photo-frame{
+  position:absolute;
+  width:100px;height:70px;
+  background:#fff;
+  border-radius:6px;
+  box-shadow:0 2px 10px rgba(0,0,0,0.15);
+  z-index:3;overflow:hidden;
+  transition:transform .3s;
+  cursor:pointer;
+}
+.photo-frame:hover{transform:scale(1.1);z-index:10}
+.photo-frame .photo-bg{
+  width:100%;height:100%;
+  display:flex;align-items:center;justify-content:center;
+  font-size:10px;color:rgba(255,255,255,0.8);
+  letter-spacing:1px;font-weight:bold;
+}
+.photo-frame.p1{left:22%;top:32%;width:90px;height:60px}
+.photo-frame.p1 .photo-bg{background:linear-gradient(135deg,#3E2C1B,#6B4226)}
+.photo-frame.p2{left:58%;top:30%;width:90px;height:60px}
+.photo-frame.p2 .photo-bg{background:linear-gradient(135deg,#2C1810,#5C3A28);color:rgba(255,200,150,0.8)}
+.photo-frame.p3{left:50%;top:52%;width:80px;height:55px}
+.photo-frame.p3 .photo-bg{background:linear-gradient(135deg,#3A4A3F,#5A7A5A)}
+.photo-frame .photo-label{
+  position:absolute;bottom:0;left:0;right:0;
+  background:rgba(0,0,0,0.5);
+  color:#fff;font-size:9px;padding:2px 4px;text-align:center;
+}
+
+/* 指北针+比例尺 */
+.compass{
+  position:absolute;bottom:15px;right:15px;z-index:10;
+  width:50px;height:50px;
+  background:rgba(255,255,255,0.9);
+  border-radius:50%;border:1px solid #d0d8e0;
+  display:flex;align-items:center;justify-content:center;
+  font-size:20px;color:#FF6B35;
+  box-shadow:0 1px 4px rgba(0,0,0,0.06);
+}
+
+/* ===== 右侧面板 ===== */
+.info-panel{display:flex;flex-direction:column;gap:15px}
+.info-card{
+  background:#f8fafc;border-radius:10px;
+  padding:16px;border:1px solid #e8ecf0;
+}
+.info-card h4{
+  font-size:13px;color:#1A3A5C;margin-bottom:8px;
+  padding-bottom:5px;border-bottom:1px solid #e0e4e8;
+  display:flex;align-items:center;gap:6px;
+}
+.info-card .item{
+  font-size:12px;color:#555;padding:4px 0;
+  display:flex;align-items:flex-start;gap:6px;
+}
+.info-card .item .dot{
+  display:inline-block;width:8px;height:8px;
+  border-radius:50%;margin-top:4px;flex-shrink:0;
+}
+.info-card .tag{
+  display:inline-block;padding:1px 8px;border-radius:8px;
+  font-size:10px;margin:1px;
+}
+.tag.rise{background:#E8F5E9;color:#2E7D32}
+.tag.fall{background:#FFF3E0;color:#E65100}
+.tag.mid{background:#E3F2FD;color:#1565C0}
+
+/* ===== 产业发展历程 ===== */
+.timeline-section{
+  margin-bottom:25px;
+  background:#f8fafc;border-radius:12px;
+  padding:20px;border:1px solid #e8ecf0;
+}
+.timeline-section h3{
+  font-size:14px;color:#1A3A5C;margin-bottom:15px;
+  padding-bottom:8px;border-bottom:2px solid #FF6B35;
+  display:flex;align-items:center;gap:8px;
+}
+.phase-row{display:flex;gap:12px;flex-wrap:wrap}
+.phase{
+  flex:1;min-width:200px;
+  background:#fff;border-radius:10px;
+  padding:14px;box-shadow:0 1px 4px rgba(0,0,0,0.04);
+  border-top:3px solid #ccc;
+  position:relative;
+}
+.phase.p1{border-color:#8B4513}
+.phase.p2{border-color:#2A5A7C}
+.phase.p3{border-color:#FF6B35}
+.phase .year{font-size:13px;font-weight:bold;color:#1A3A5C}
+.phase .year span{font-size:11px;font-weight:normal;color:#888;margin-left:6px}
+.phase .desc{font-size:12px;color:#555;margin-top:4px;line-height:1.6}
+.phase .pct{font-size:10px;color:#999;margin-top:4px}
+
+/* ===== 区域外联动 ===== */
+.link-section{
+  background:#1A3A5C;border-radius:12px;
+  padding:25px;color:#fff;
+  position:relative;overflow:hidden;
+}
+.link-section::before{
+  content:'';position:absolute;top:-30%;right:-10%;
+  width:300px;height:300px;
+  background:rgba(255,255,255,0.03);border-radius:50%;
+}
+.link-section h3{
+  font-size:15px;letter-spacing:1px;margin-bottom:15px;
+  position:relative;z-index:1;
+  display:flex;align-items:center;gap:8px;
+}
+.link-section h3 .badge{background:#FF6B35;border-radius:8px;padding:2px 10px;font-size:11px;font-weight:normal}
+.link-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;position:relative;z-index:1}
+.link-item{
+  background:rgba(255,255,255,0.08);border-radius:10px;
+  padding:12px 14px;border:1px solid rgba(255,255,255,0.1);
+  display:flex;align-items:flex-start;gap:10px;
+  transition:background .3s;
+}
+.link-item:hover{background:rgba(255,255,255,0.14)}
+.link-item .icon{font-size:22px;flex-shrink:0}
+.link-item .info{flex:1}
+.link-item .info .name{font-size:13px;font-weight:bold;margin-bottom:2px}
+.link-item .info .detail{font-size:11px;opacity:0.7;line-height:1.5}
+.link-item .info .action{font-size:11px;color:#FF6B35;margin-top:4px}
+
+/* ===== 底部 ===== */
+.bottom-row{display:flex;gap:15px;margin-top:15px}
+.bottom-row .col{flex:1}
+
+/* ===== 图例 ===== */
+.legend{
+  background:#f8fafc;border-radius:10px;
+  padding:12px 16px;border:1px solid #e8ecf0;
+}
+.legend h4{font-size:12px;color:#1A3A5C;margin-bottom:6px}
+.legend-row{display:flex;align-items:center;gap:6px;padding:2px 0;font-size:11px;color:#666}
+.legend-dot{width:10px;height:10px;border-radius:50%;flex-shrink:0}
+.legend-line{width:20px;height:3px;border-radius:2px;flex-shrink:0}
+.legend-box{width:14px;height:10px;border-radius:2px;flex-shrink:0;border:1.5px dashed}
+
+/* ===== 响应式 ===== */
+@media(max-width:900px){
+  .two-col{flex-direction:column}
+  .link-grid{grid-template-columns:1fr}
+  .phase-row{flex-direction:column}
+  .bottom-row{flex-direction:column}
+  .iso-map{height:350px}
+}
+</style>
+</head>
+<body>
+
+<div class="page">
+  <!-- 顶部标题 -->
+  <div class="top-banner">
+    <h1>产业现状与区域联动分析 <small>后湖片区</small></h1>
+    <div class="sub">研究范围 195 ha · 产业空间分布 · 区域协同格局</div>
+    <div class="tags">
+      <span>区域内产业现状</span>
+      <span>区域外产业联动</span>
+      <span>高校资源整合</span>
+      <span>长株潭协同</span>
+    </div>
+  </div>
+
+  <!-- 主内容 -->
+  <div class="main-content">
+    
+    <!-- 统计卡片 -->
+    <div class="stat-row">
+      <div class="stat-card"><div class="num">45<span class="unit">%</span></div><div class="label">文创设计产业占比</div></div>
+      <div class="stat-card green"><div class="num">25<span class="unit">%</span></div><div class="label">餐饮零售占比</div></div>
+      <div class="stat-card blue"><div class="num">20<span class="unit">%</span></div><div class="label">艺术培训占比</div></div>
+      <div class="stat-card gold"><div class="num">20<span class="unit">万+</span></div><div class="label">周边高校师生数</div></div>
+      <div class="stat-card red"><div class="num">10<span class="unit">%</span></div><div class="label">低效待转型产业</div></div>
+    </div>
+
+    <!-- 两栏：地图+面板 -->
+    <div class="two-col">
+      <!-- 左：产业地图 -->
+      <div class="col-left">
+        <div class="map-section">
+          <h3>区域内产业空间分布 <span class="badge">轴测示意</span></h3>
+          <div class="iso-map">
+            <div class="grid"></div>
+            <!-- 边界区 -->
+            <div class="zone edge"></div>
+            <div class="zone transition"></div>
+            <div class="zone core"></div>
+            <!-- 分区标签 -->
+            <div class="zone-label z1">文创核心区</div>
+            <div class="zone-label z2">过渡更新区</div>
+            <div class="zone-label z3">边缘居住区</div>
+            <!-- 路网 -->
+            <div class="road r1"></div>
+            <div class="road r2"></div>
+            <div class="road r3"></div>
+            <div class="road r4"></div>
+            <!-- 后湖水面 -->
+            <div class="houhu-lake"></div>
+            <!-- 产业POI -->
+            <div class="poi design" data-label="设计事务所群"></div>
+            <div class="poi cafe" data-label="特色餐饮集群"></div>
+            <div class="poi gallery" data-label="艺术展览馆"></div>
+            <div class="poi studio" data-label="创意工作室"></div>
+            <div class="poi shop" data-label="文创产品店"></div>
+            <div class="poi edu" data-label="培训机构"></div>
+            <div class="poi old" data-label="工业遗存"></div>
+            <!-- 照片框 -->
+            <div class="photo-frame p1"><div class="photo-bg">曙光电子厂<br>红砖厂房</div><div class="photo-label">工业遗存</div></div>
+            <div class="photo-frame p2"><div class="photo-bg">后湖设计<br>创意园</div><div class="photo-label">文创地标</div></div>
+            <div class="photo-frame p3"><div class="photo-bg">环湖绿道<br>慢行系统</div><div class="photo-label">生态改造</div></div>
+            <!-- 指北针 -->
+            <div class="compass">&#x2191;</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 右：信息面板 -->
+      <div class="col-right">
+        <div class="info-panel">
+          <!-- 产业类型 -->
+          <div class="info-card">
+            <h4>现状产业类型与占比</h4>
+            <div class="item"><span class="dot" style="background:#FF6B35"></span> 文创设计产业 <span class="tag rise">45% · 主导</span></div>
+            <div class="item"><span class="dot" style="background:#B8860B"></span> 餐饮零售配套 <span class="tag mid">25%</span></div>
+            <div class="item"><span class="dot" style="background:#4A6741"></span> 艺术培训教育 <span class="tag mid">20%</span></div>
+            <div class="item"><span class="dot" style="background:#7A7A7A"></span> 低效待转型产业 <span class="tag fall">10%</span></div>
+          </div>
+          <!-- 产业优势 -->
+          <div class="info-card">
+            <h4>发展优势</h4>
+            <div class="item"><span class="dot" style="background:#4CAF50"></span> 区位核心：岳麓山与湘江之间节点</div>
+            <div class="item"><span class="dot" style="background:#4CAF50"></span> 人才富集：高校师生超20万人</div>
+            <div class="item"><span class="dot" style="background:#4CAF50"></span> 空间优势：旧厂房改造成本低</div>
+            <div class="item"><span class="dot" style="background:#4CAF50"></span> 品牌溢价："后湖设计创意园"已具知名度</div>
+          </div>
+          <!-- 问题短板 -->
+          <div class="info-card">
+            <h4>问题短板</h4>
+            <div class="item"><span class="dot" style="background:#E53935"></span> 同质化竞争：文创业态超60%，缺乏差异</div>
+            <div class="item"><span class="dot" style="background:#E53935"></span> 产业链不全：缺上游研发和下游交易</div>
+            <div class="item"><span class="dot" style="background:#E53935"></span> 人才流失：租金上涨，青年艺术家难留</div>
+            <div class="item"><span class="dot" style="background:#E53935"></span> 融资困难：轻资产企业缺乏有效抵押</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 产业发展历程 -->
+    <div class="timeline-section">
+      <h3>产业发展历程</h3>
+      <div class="phase-row">
+        <div class="phase p1">
+          <div class="year">第一阶段 <span>1950—1990 · 工业集聚期</span></div>
+          <div class="desc">以曙光电子厂等国企为核心，形成完整工业生产体系，产业以电子制造、机械加工为主，居住人口以工厂职工为主</div>
+        </div>
+        <div class="phase p2">
+          <div class="year">第二阶段 <span>1990—2015 · 产业衰退期</span></div>
+          <div class="desc">国企改制，工厂停产，大量厂房空置，片区逐渐沦为"城中村"，产业空心化严重，以外来务工人员和原村民为主</div>
+        </div>
+        <div class="phase p3">
+          <div class="year">第三阶段 <span>2015至今 · 文创崛起期</span></div>
+          <div class="desc">长沙启动环境整治和产业升级，引入艺术设计、文创企业，形成"后湖设计创意园"，成为长沙文创产业新地标</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 区域外产业联动 -->
+    <div class="link-section">
+      <h3>区域外产业联动 <span class="badge">四向协同</span></h3>
+      <div class="link-grid">
+        <div class="link-item">
+          <div class="icon">&#x1F393;</div>
+          <div class="info">
+            <div class="name">周边高校产业资源</div>
+            <div class="detail">中南大学·湖南大学·湖南师大 | 师生20万+<br>建议：共建校企联合创意工场、青年创业基金</div>
+            <div class="action">产学研衔接 →</div>
+          </div>
+        </div>
+        <div class="link-item">
+          <div class="icon">&#x1F3EA;</div>
+          <div class="info">
+            <div class="name">麓山南大学城商业</div>
+            <div class="detail">麓山南路日均客流5万+，餐饮/娱乐/零售聚集<br>建议：打造"后湖—麓山南"特色商业走廊</div>
+            <div class="action">功能互补衔接 →</div>
+          </div>
+        </div>
+        <div class="link-item">
+          <div class="icon">&#x1F3D9;</div>
+          <div class="info">
+            <div class="name">湘江新区产业协同</div>
+            <div class="detail">国家级新区，科创+文创+金融重点发展<br>建议：差异化定位，引入创投基金</div>
+            <div class="action">产业衔接 →</div>
+          </div>
+        </div>
+        <div class="link-item">
+          <div class="icon">&#x1F309;</div>
+          <div class="info">
+            <div class="name">长株潭都市圈协同</div>
+            <div class="detail">"长沙研发·株洲制造·湘潭配套"分工格局<br>建议：共建文创产业联盟、青年艺术家交流中心</div>
+            <div class="action">空间衔接 →</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 底部图例 -->
+    <div class="bottom-row">
+      <div class="col">
+        <div class="legend">
+          <h4>图例</h4>
+          <div class="legend-row"><span class="legend-dot" style="background:#FF6B35"></span> 设计事务所 / 文创企业</div>
+          <div class="legend-row"><span class="legend-dot" style="background:#B8860B"></span> 特色餐饮 / 零售商店</div>
+          <div class="legend-row"><span class="legend-dot" style="background:#4A6741"></span> 艺术展览 / 培训机构</div>
+          <div class="legend-row"><span class="legend-dot" style="background:#2A5A7C"></span> 创意工作室</div>
+          <div class="legend-row"><span class="legend-dot" style="background:#8B4513"></span> 工业遗存 / 待更新建筑</div>
+          <div class="legend-row"><span class="legend-dot" style="background:#6B4FA0"></span> 教育培训机构</div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="legend">
+          <h4>分区示意</h4>
+          <div class="legend-row"><span class="legend-box" style="border-color:#FF6B35;background:rgba(255,107,53,0.10)"></span> 文创核心区（环湖一线）</div>
+          <div class="legend-row"><span class="legend-box" style="border-color:#2A5A7C;background:rgba(42,90,124,0.06)"></span> 过渡更新区（环湖二线）</div>
+          <div class="legend-row"><span class="legend-box" style="border-color:#8B7355;background:rgba(139,115,85,0.04)"></span> 边缘居住/工业区</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,3291 @@
+{
+  "study_area": {
+    "name": "后湖片区研究范围 (195ha)",
+    "center": [
+      28.1639,
+      112.9398
+    ],
+    "bbox": [
+      112.926,
+      28.152,
+      112.954,
+      28.175
+    ],
+    "name_en": "Houhu Area"
+  },
+  "fetch_time": "2026-05-08T19:45:24.887248",
+  "categories": {
+    "education": {
+      "label": "教育科研设施",
+      "count": 23
+    },
+    "medical": {
+      "label": "医疗卫生设施",
+      "count": 6
+    },
+    "commercial": {
+      "label": "商业服务设施",
+      "count": 61
+    },
+    "transport": {
+      "label": "交通设施",
+      "count": 145
+    },
+    "culture": {
+      "label": "文化体育设施",
+      "count": 18
+    }
+  },
+  "data": {
+    "education": [
+      {
+        "osm_id": "node/3860056604",
+        "name": "中南大学新校区 图书馆",
+        "lat": 28.1531281,
+        "lon": 112.9389928,
+        "type": "library",
+        "tags": {
+          "amenity": "library",
+          "name": "中南大学新校区 图书馆"
+        }
+      },
+      {
+        "osm_id": "node/3862417143",
+        "name": "湘龙幼儿园",
+        "lat": 28.1586815,
+        "lon": 112.9348461,
+        "type": "kindergarten",
+        "tags": {
+          "amenity": "kindergarten",
+          "name": "湘龙幼儿园"
+        }
+      },
+      {
+        "osm_id": "node/3862417144",
+        "name": "文志艺术学校",
+        "lat": 28.1592699,
+        "lon": 112.935897,
+        "type": "school",
+        "tags": {
+          "amenity": "school",
+          "name": "文志艺术学校"
+        }
+      },
+      {
+        "osm_id": "node/10020233824",
+        "name": "岳麓图书馆",
+        "lat": 28.1603177,
+        "lon": 112.9404783,
+        "type": "library",
+        "tags": {
+          "addr:city": "长沙市",
+          "addr:district": "岳麓区",
+          "addr:province": "湖南省",
+          "amenity": "library",
+          "name": "岳麓图书馆",
+          "opening_hours": "周二至周日 9-17"
+        }
+      },
+      {
+        "osm_id": "way/357450933",
+        "name": "湖南大学生物学院",
+        "lat": 28.173387055555555,
+        "lon": 112.94516187777778,
+        "type": "university",
+        "tags": {
+          "amenity": "university",
+          "name": "湖南大学生物学院"
+        }
+      },
+      {
+        "osm_id": "way/486904540",
+        "name": "湖南大学",
+        "lat": 28.182021524305554,
+        "lon": 112.94092942708333,
+        "type": "university",
+        "tags": {
+          "amenity": "university",
+          "name": "湖南大学",
+          "name:en": "Hunan University",
+          "name:ja": "湖南大学",
+          "name:zh": "湖南大学",
+          "name:zh-Hans": "湖南大学",
+          "name:zh-Hant": "湖南大學",
+          "website": "https://www.hnu.edu.cn/",
+          "wikidata": "Q649868",
+          "wikipedia": "zh:湖南大学"
+        }
+      },
+      {
+        "osm_id": "way/533289727",
+        "name": "长沙矿山研究院",
+        "lat": 28.169952390909092,
+        "lon": 112.93725002121212,
+        "type": "college",
+        "tags": {
+          "amenity": "college",
+          "name": "长沙矿山研究院"
+        }
+      },
+      {
+        "osm_id": "way/533289730",
+        "name": "杜家塘小学",
+        "lat": 28.167875371875,
+        "lon": 112.936229178125,
+        "type": "school",
+        "tags": {
+          "amenity": "school",
+          "name": "杜家塘小学"
+        }
+      },
+      {
+        "osm_id": "way/533289733",
+        "name": "中南大学（麓南校区）",
+        "lat": 28.16458961151079,
+        "lon": 112.93122486834532,
+        "type": "university",
+        "tags": {
+          "amenity": "university",
+          "name": "中南大学（麓南校区）",
+          "name:zh": "中南大学（麓南校区）",
+          "wikidata": "Q5061828",
+          "wikipedia": "zh:中南大学"
+        }
+      },
+      {
+        "osm_id": "way/644418434",
+        "name": "校本部幼儿园",
+        "lat": 28.1691144,
+        "lon": 112.92840437,
+        "type": "kindergarten",
+        "tags": {
+          "amenity": "kindergarten",
+          "name": "校本部幼儿园"
+        }
+      },
+      {
+        "osm_id": "way/644418438",
+        "name": "湖南师大附中博才实验中学（大学科技城校区）",
+        "lat": 28.16997741666667,
+        "lon": 112.92927245,
+        "type": "school",
+        "tags": {
+          "amenity": "school",
+          "name": "湖南师大附中博才实验中学（大学科技城校区）"
+        }
+      },
+      {
+        "osm_id": "way/966198402",
+        "name": "中南大学（潇湘校区）",
+        "lat": 28.15613386190476,
+        "lon": 112.93341946734694,
+        "type": "university",
+        "tags": {
+          "amenity": "university",
+          "name": "中南大学（潇湘校区）",
+          "wikidata": "Q5061828",
+          "wikipedia": "zh:中南大学"
+        }
+      },
+      {
+        "osm_id": "way/1026505194",
+        "name": "卓乐艺术培训学校",
+        "lat": 28.15245147,
+        "lon": 112.943983555,
+        "type": "school",
+        "tags": {
+          "amenity": "school",
+          "name": "卓乐艺术培训学校"
+        }
+      },
+      {
+        "osm_id": "way/1028934324",
+        "name": "中南大学（岳麓山校区）",
+        "lat": 28.173610097999997,
+        "lon": 112.92346364049999,
+        "type": "university",
+        "tags": {
+          "addr:city": "长沙",
+          "addr:district": "岳麓",
+          "addr:housenumber": "932",
+          "addr:postcode": "410083",
+          "addr:province": "湖南",
+          "addr:street": "麓山南路",
+          "amenity": "university",
+          "name": "中南大学（岳麓山校区）",
+          "website": "https://www.csu.edu.cn/",
+          "wikidata": "Q5061828",
+          "wikipedia": "zh:中南大学"
+        }
+      },
+      {
+        "osm_id": "way/1029393716",
+        "name": "长沙矿山研究院（后湖院区）",
+        "lat": 28.160893992857144,
+        "lon": 112.93241518571428,
+        "type": "college",
+        "tags": {
+          "amenity": "college",
+          "name": "长沙矿山研究院（后湖院区）"
+        }
+      },
+      {
+        "osm_id": "way/1029410069",
+        "name": "湖南大学天马学生公寓",
+        "lat": 28.16988265652174,
+        "lon": 112.94075737826087,
+        "type": "university",
+        "tags": {
+          "amenity": "university",
+          "name": "湖南大学天马学生公寓"
+        }
+      },
+      {
+        "osm_id": "way/1029410070",
+        "name": "湖南师范大学（南院校区）",
+        "lat": 28.169001868055556,
+        "lon": 112.93341724027778,
+        "type": "university",
+        "tags": {
+          "amenity": "university",
+          "name": "湖南师范大学（南院校区）",
+          "wikidata": "Q5942027",
+          "wikipedia": "zh:湖南师范大学"
+        }
+      },
+      {
+        "osm_id": "way/1029683925",
+        "name": "长沙市第十九中学",
+        "lat": 28.17066870952381,
+        "lon": 112.93595932380951,
+        "type": "school",
+        "tags": {
+          "amenity": "school",
+          "name": "长沙市第十九中学",
+          "name_1": "湖南师范大学附属艺术中学",
+          "name_2": "湖南长沙艺术学校"
+        }
+      },
+      {
+        "osm_id": "way/1030314820",
+        "name": "",
+        "lat": 28.16635008571429,
+        "lon": 112.92899935714286,
+        "type": "kindergarten",
+        "tags": {
+          "amenity": "kindergarten"
+        }
+      },
+      {
+        "osm_id": "way/1030599322",
+        "name": "湖南艺术职业学院",
+        "lat": 28.17165676923077,
+        "lon": 112.93154980769229,
+        "type": "college",
+        "tags": {
+          "amenity": "college",
+          "name": "湖南艺术职业学院"
+        }
+      },
+      {
+        "osm_id": "way/1098775527",
+        "name": "湖南大学",
+        "lat": 28.1679511,
+        "lon": 112.9449853,
+        "type": "university",
+        "tags": {
+          "amenity": "university",
+          "name": "湖南大学"
+        }
+      },
+      {
+        "osm_id": "way/1098775528",
+        "name": "湖南大学",
+        "lat": 28.174639145454545,
+        "lon": 112.94627937272726,
+        "type": "university",
+        "tags": {
+          "amenity": "university",
+          "name": "湖南大学"
+        }
+      },
+      {
+        "osm_id": "way/1279838355",
+        "name": "湖南大学",
+        "lat": 28.17127448,
+        "lon": 112.94160422,
+        "type": "university",
+        "tags": {
+          "amenity": "university",
+          "name": "湖南大学"
+        }
+      }
+    ],
+    "medical": [
+      {
+        "osm_id": "node/3133310982",
+        "name": "湖南大学医院天马保健所",
+        "lat": 28.1689439,
+        "lon": 112.939411,
+        "type": "clinic",
+        "tags": {
+          "amenity": "clinic",
+          "name": "湖南大学医院天马保健所"
+        }
+      },
+      {
+        "osm_id": "node/5714680268",
+        "name": "千金大药房",
+        "lat": 28.1668719,
+        "lon": 112.9273287,
+        "type": "pharmacy",
+        "tags": {
+          "amenity": "pharmacy",
+          "dispensing": "yes",
+          "healthcare": "pharmacy",
+          "name": "千金大药房"
+        }
+      },
+      {
+        "osm_id": "node/5724482046",
+        "name": "升华公寓医务室",
+        "lat": 28.1615004,
+        "lon": 112.9308347,
+        "type": "hospital",
+        "tags": {
+          "amenity": "hospital",
+          "healthcare": "hospital",
+          "name": "升华公寓医务室"
+        }
+      },
+      {
+        "osm_id": "node/9299427901",
+        "name": "养天和大药房",
+        "lat": 28.1701685,
+        "lon": 112.9350219,
+        "type": "pharmacy",
+        "tags": {
+          "amenity": "pharmacy",
+          "dispensing": "yes",
+          "healthcare": "pharmacy",
+          "name": "养天和大药房",
+          "name:en": "Tianhe Pharmacy",
+          "name:zh": "养天和大药房"
+        }
+      },
+      {
+        "osm_id": "way/1279838359",
+        "name": "",
+        "lat": 28.16831436,
+        "lon": 112.94672204000001,
+        "type": "hospital",
+        "tags": {
+          "amenity": "hospital",
+          "healthcare": "hospital"
+        }
+      },
+      {
+        "osm_id": "way/1279838363",
+        "name": "",
+        "lat": 28.16831515,
+        "lon": 112.94418995,
+        "type": "hospital",
+        "tags": {
+          "amenity": "hospital",
+          "healthcare": "hospital"
+        }
+      }
+    ],
+    "commercial": [
+      {
+        "osm_id": "node/1308886013",
+        "name": "中南大学八食堂",
+        "lat": 28.16041,
+        "lon": 112.9317231,
+        "type": "restaurant",
+        "tags": {
+          "addr:housename": "中南大学八食堂",
+          "addr:postcode": "410012",
+          "amenity": "restaurant",
+          "cuisine": "chinese",
+          "fast_food": "cafeteria",
+          "int_name": "The 8th Cafeteria of Centel South Universtiy",
+          "name": "中南大学八食堂",
+          "source": "http://hqjt.csu.edu.cn/service/yszx.htm",
+          "website": "http://hqjt.csu.edu.cn/"
+        }
+      },
+      {
+        "osm_id": "node/1660209321",
+        "name": "春之鸟超市",
+        "lat": 28.160981,
+        "lon": 112.9300768,
+        "type": "supermarket",
+        "tags": {
+          "addr:housename": "升华学生公寓 12 栋",
+          "addr:postcode": "410012",
+          "int_name": "Chunzhidao Supermarket",
+          "name": "春之鸟超市",
+          "shop": "supermarket"
+        }
+      },
+      {
+        "osm_id": "node/1660218369",
+        "name": "中南大学二食堂",
+        "lat": 28.1624862,
+        "lon": 112.9299892,
+        "type": "restaurant",
+        "tags": {
+          "addr:housename": "升华餐饮楼",
+          "addr:postcode": "410012",
+          "amenity": "restaurant",
+          "cuisine": "chinese",
+          "fast_food": "cafeteria",
+          "int_name": "Shenghua Cafeteria Building",
+          "name": "中南大学二食堂",
+          "opening_hours": "Mo-Su,PH 06:00-22:00",
+          "outdoor_seating": "no",
+          "smoking": "no",
+          "source": "http://hqjt.csu.edu.cn/service/yszx.htm",
+          "takeaway": "no",
+          "website": "http://hqjt.csu.edu.cn/"
+        }
+      },
+      {
+        "osm_id": "node/3190132272",
+        "name": "乐尔乐超市",
+        "lat": 28.1699578,
+        "lon": 112.9414722,
+        "type": "supermarket",
+        "tags": {
+          "name": "乐尔乐超市",
+          "shop": "supermarket"
+        }
+      },
+      {
+        "osm_id": "node/3287267936",
+        "name": "肯德基",
+        "lat": 28.172278,
+        "lon": 112.9385446,
+        "type": "fast_food",
+        "tags": {
+          "amenity": "fast_food",
+          "brand": "肯德基",
+          "brand:en": "KFC",
+          "brand:wikidata": "Q524757",
+          "brand:zh": "肯德基",
+          "cuisine": "chicken",
+          "name": "肯德基",
+          "name:en": "KFC",
+          "name:zh": "肯德基",
+          "takeaway": "yes"
+        }
+      },
+      {
+        "osm_id": "node/3287267937",
+        "name": "中国建设银行",
+        "lat": 28.1723876,
+        "lon": 112.9388186,
+        "type": "bank",
+        "tags": {
+          "amenity": "bank",
+          "name": "中国建设银行"
+        }
+      },
+      {
+        "osm_id": "node/3464568181",
+        "name": "聚划算超市",
+        "lat": 28.1708114,
+        "lon": 112.9406244,
+        "type": "supermarket",
+        "tags": {
+          "name": "聚划算超市",
+          "shop": "supermarket"
+        }
+      },
+      {
+        "osm_id": "node/3860991308",
+        "name": "B座食堂",
+        "lat": 28.1534636,
+        "lon": 112.9367079,
+        "type": "restaurant",
+        "tags": {
+          "amenity": "restaurant",
+          "name": "B座食堂"
+        }
+      },
+      {
+        "osm_id": "node/3862351125",
+        "name": "东北饺子馆",
+        "lat": 28.1555408,
+        "lon": 112.932397,
+        "type": "restaurant",
+        "tags": {
+          "amenity": "restaurant",
+          "cuisine": "chinese",
+          "name": "东北饺子馆"
+        }
+      },
+      {
+        "osm_id": "node/3862351126",
+        "name": "后湖批发超市",
+        "lat": 28.1555868,
+        "lon": 112.9335032,
+        "type": "supermarket",
+        "tags": {
+          "name": "后湖批发超市",
+          "shop": "supermarket"
+        }
+      },
+      {
+        "osm_id": "node/3862351127",
+        "name": "渔夫生活超市",
+        "lat": 28.1560514,
+        "lon": 112.9329318,
+        "type": "supermarket",
+        "tags": {
+          "name": "渔夫生活超市",
+          "shop": "supermarket"
+        }
+      },
+      {
+        "osm_id": "node/3862351128",
+        "name": "起点超市后湖店",
+        "lat": 28.1576323,
+        "lon": 112.9338381,
+        "type": "supermarket",
+        "tags": {
+          "name": "起点超市后湖店",
+          "shop": "supermarket"
+        }
+      },
+      {
+        "osm_id": "node/3862351129",
+        "name": "家利购生鲜超市后湖店",
+        "lat": 28.1572409,
+        "lon": 112.9341401,
+        "type": "supermarket",
+        "tags": {
+          "name": "家利购生鲜超市后湖店",
+          "shop": "supermarket"
+        }
+      },
+      {
+        "osm_id": "node/3862351131",
+        "name": "中南小当家学生餐厅",
+        "lat": 28.1568046,
+        "lon": 112.9340564,
+        "type": "restaurant",
+        "tags": {
+          "amenity": "restaurant",
+          "fast_food": "cafeteria",
+          "name": "中南小当家学生餐厅"
+        }
+      },
+      {
+        "osm_id": "node/3862351132",
+        "name": "锦和便利超市后湖店",
+        "lat": 28.1569554,
+        "lon": 112.9330194,
+        "type": "convenience",
+        "tags": {
+          "name": "锦和便利超市后湖店",
+          "shop": "convenience"
+        }
+      },
+      {
+        "osm_id": "node/3862351133",
+        "name": "实惠超市",
+        "lat": 28.156256,
+        "lon": 112.933416,
+        "type": "supermarket",
+        "tags": {
+          "name": "实惠超市",
+          "shop": "supermarket"
+        }
+      },
+      {
+        "osm_id": "node/4702794689",
+        "name": "老四川石锅鱼",
+        "lat": 28.1618186,
+        "lon": 112.9317179,
+        "type": "restaurant",
+        "tags": {
+          "amenity": "restaurant",
+          "name": "老四川石锅鱼"
+        }
+      },
+      {
+        "osm_id": "node/4809604879",
+        "name": "湖南湘江新区农村商业银行",
+        "lat": 28.1579307,
+        "lon": 112.9326584,
+        "type": "bank",
+        "tags": {
+          "amenity": "bank",
+          "atm": "yes",
+          "name": "湖南湘江新区农村商业银行"
+        }
+      },
+      {
+        "osm_id": "node/4810101914",
+        "name": "深夜食堂",
+        "lat": 28.1558254,
+        "lon": 112.9327945,
+        "type": "restaurant",
+        "tags": {
+          "addr:housenumber": "6栋",
+          "addr:street": "后湖小区",
+          "amenity": "restaurant",
+          "cuisine": "regional",
+          "name": "深夜食堂",
+          "opening_hours": "17：00",
+          "outdoor_seating": "no",
+          "takeaway": "no"
+        }
+      },
+      {
+        "osm_id": "node/4813618391",
+        "name": "北京脆皮鸭",
+        "lat": 28.1556336,
+        "lon": 112.9328926,
+        "type": "restaurant",
+        "tags": {
+          "amenity": "restaurant",
+          "name": "北京脆皮鸭"
+        }
+      },
+      {
+        "osm_id": "node/4813623187",
+        "name": "岳麓餐馆",
+        "lat": 28.1577853,
+        "lon": 112.9332108,
+        "type": "restaurant",
+        "tags": {
+          "amenity": "restaurant",
+          "name": "岳麓餐馆"
+        }
+      },
+      {
+        "osm_id": "node/4813623188",
+        "name": "魔锅坊",
+        "lat": 28.157511,
+        "lon": 112.9341505,
+        "type": "restaurant",
+        "tags": {
+          "amenity": "restaurant",
+          "name": "魔锅坊"
+        }
+      },
+      {
+        "osm_id": "node/4813623189",
+        "name": "蜀签签",
+        "lat": 28.1574974,
+        "lon": 112.9342368,
+        "type": "restaurant",
+        "tags": {
+          "amenity": "restaurant",
+          "name": "蜀签签"
+        }
+      },
+      {
+        "osm_id": "node/4814789365",
+        "name": "麻辣香锅",
+        "lat": 28.1578437,
+        "lon": 112.9333087,
+        "type": "restaurant",
+        "tags": {
+          "amenity": "restaurant",
+          "cuisine": "chinese",
+          "delivery": "yes",
+          "name": "麻辣香锅",
+          "opening_hours": "8:00-20:00",
+          "outdoor_seating": "no",
+          "smoking": "yes",
+          "takeaway": "yes"
+        }
+      },
+      {
+        "osm_id": "node/4814789366",
+        "name": "金记家常菜",
+        "lat": 28.1555457,
+        "lon": 112.9323165,
+        "type": "restaurant",
+        "tags": {
+          "amenity": "restaurant",
+          "cuisine": "chinese",
+          "delivery": "yes",
+          "name": "金记家常菜",
+          "outdoor_seating": "no",
+          "smoking": "yes",
+          "takeaway": "yes"
+        }
+      },
+      {
+        "osm_id": "node/5330624443",
+        "name": "星巴克",
+        "lat": 28.1665574,
+        "lon": 112.9273014,
+        "type": "cafe",
+        "tags": {
+          "amenity": "cafe",
+          "brand": "星巴克",
+          "brand:en": "Starbucks",
+          "brand:wikidata": "Q37158",
+          "brand:wikipedia": "zh:星巴克",
+          "brand:zh": "星巴克",
+          "cuisine": "coffee_shop",
+          "internet_access": "wlan",
+          "name": "星巴克",
+          "name:en": "Starbucks",
+          "name:zh": "星巴克",
+          "takeaway": "yes"
+        }
+      },
+      {
+        "osm_id": "node/5330624566",
+        "name": "肯德基",
+        "lat": 28.1666497,
+        "lon": 112.9272885,
+        "type": "fast_food",
+        "tags": {
+          "amenity": "fast_food",
+          "brand": "肯德基",
+          "brand:en": "KFC",
+          "brand:wikidata": "Q524757",
+          "brand:wikipedia": "zh:肯德基",
+          "brand:zh": "肯德基",
+          "cuisine": "chicken",
+          "internet_access": "wlan",
+          "name": "肯德基",
+          "name:en": "KFC",
+          "name:zh": "肯德基",
+          "takeaway": "yes"
+        }
+      },
+      {
+        "osm_id": "node/5713755269",
+        "name": "乌江片片鱼",
+        "lat": 28.1555475,
+        "lon": 112.9324632,
+        "type": "restaurant",
+        "tags": {
+          "amenity": "restaurant",
+          "cuisine": "chinese",
+          "name": "乌江片片鱼"
+        }
+      },
+      {
+        "osm_id": "node/5713755272",
+        "name": "",
+        "lat": 28.1552646,
+        "lon": 112.9338732,
+        "type": "supermarket",
+        "tags": {
+          "disused:amenity": "restaurant",
+          "disused:name": "昌恒餐厅",
+          "shop": "supermarket"
+        }
+      },
+      {
+        "osm_id": "node/5713755273",
+        "name": "阿Q桶饭",
+        "lat": 28.1554845,
+        "lon": 112.9338753,
+        "type": "restaurant",
+        "tags": {
+          "amenity": "restaurant",
+          "name": "阿Q桶饭"
+        }
+      },
+      {
+        "osm_id": "node/5714793110",
+        "name": "七食堂喜洋洋超市",
+        "lat": 28.1625124,
+        "lon": 112.9318936,
+        "type": "supermarket",
+        "tags": {
+          "name": "七食堂喜洋洋超市",
+          "shop": "supermarket"
+        }
+      },
+      {
+        "osm_id": "node/5715415732",
+        "name": "水果店",
+        "lat": 28.1622965,
+        "lon": 112.931898,
+        "type": "supermarket",
+        "tags": {
+          "name": "水果店",
+          "shop": "supermarket"
+        }
+      },
+      {
+        "osm_id": "node/5724434605",
+        "name": "烤鱼",
+        "lat": 28.156085,
+        "lon": 112.9337323,
+        "type": "restaurant",
+        "tags": {
+          "amenity": "restaurant",
+          "cuisine": "chinese",
+          "name": "烤鱼"
+        }
+      },
+      {
+        "osm_id": "node/6218768270",
+        "name": "麒祥老北京涮羊肉",
+        "lat": 28.1678007,
+        "lon": 112.929407,
+        "type": "restaurant",
+        "tags": {
+          "amenity": "restaurant",
+          "capacity": "150",
+          "cuisine": "chinese;hotpot",
+          "delivery": "no",
+          "name": "麒祥老北京涮羊肉",
+          "name:zh": "麒祥老北京涮羊肉",
+          "opening_hours": "Mo-Su 12:00-23:00",
+          "outdoor_seating": "no",
+          "smoking": "yes",
+          "takeaway": "no"
+        }
+      },
+      {
+        "osm_id": "node/9271075381",
+        "name": "",
+        "lat": 28.1719889,
+        "lon": 112.9386504,
+        "type": "supermarket",
+        "tags": {
+          "shop": "supermarket"
+        }
+      },
+      {
+        "osm_id": "node/9280793080",
+        "name": "何计粥铺",
+        "lat": 28.1556357,
+        "lon": 112.9329273,
+        "type": "restaurant",
+        "tags": {
+          "amenity": "restaurant",
+          "name": "何计粥铺"
+        }
+      },
+      {
+        "osm_id": "node/9298206425",
+        "name": "韩国炸鸡",
+        "lat": 28.167038,
+        "lon": 112.9300662,
+        "type": "fast_food",
+        "tags": {
+          "amenity": "fast_food",
+          "name": "韩国炸鸡",
+          "opening_hours": "00:00-23:00"
+        }
+      },
+      {
+        "osm_id": "node/9299427873",
+        "name": "中国兰州拉面",
+        "lat": 28.1699392,
+        "lon": 112.934072,
+        "type": "restaurant",
+        "tags": {
+          "addr:city": "长沙市",
+          "addr:district": "岳麓区",
+          "addr:province": "湖南省",
+          "amenity": "restaurant",
+          "cuisine": "chinese;noodles",
+          "name": "中国兰州拉面",
+          "name:en": "Lanzhou noodles, China",
+          "name:zh": "中国兰州拉面"
+        }
+      },
+      {
+        "osm_id": "node/9299427877",
+        "name": "南麓大厦",
+        "lat": 28.170117,
+        "lon": 112.9348553,
+        "type": "mall",
+        "tags": {
+          "addr:city": "长沙市",
+          "addr:district": "岳麓区",
+          "addr:province": "湖南省",
+          "name": "南麓大厦",
+          "name:en": "Nan Lu mall",
+          "name:zh": "南麓大厦",
+          "shop": "mall"
+        }
+      },
+      {
+        "osm_id": "node/9299427886",
+        "name": "泰真打",
+        "lat": 28.1700013,
+        "lon": 112.934448,
+        "type": "restaurant",
+        "tags": {
+          "addr:city": "长沙市",
+          "addr:district": "岳麓区",
+          "addr:province": "湖南省",
+          "amenity": "restaurant",
+          "cuisine": "chinese",
+          "name": "泰真打",
+          "name:en": "Tai Zhen Da",
+          "name:zh": "泰真打"
+        }
+      },
+      {
+        "osm_id": "node/9440272232",
+        "name": "麦当劳",
+        "lat": 28.1674914,
+        "lon": 112.9287288,
+        "type": "fast_food",
+        "tags": {
+          "amenity": "fast_food",
+          "brand": "麦当劳",
+          "brand:en": "McDonald's",
+          "brand:wikidata": "Q38076",
+          "brand:wikipedia": "zh:麦当劳",
+          "brand:zh": "麦当劳",
+          "brand:zh-Hans": "麦当劳",
+          "cuisine": "burger",
+          "name": "麦当劳",
+          "name:en": "McDonald's",
+          "name:zh": "麦当劳",
+          "name:zh-Hans": "麦当劳",
+          "takeaway": "yes"
+        }
+      },
+      {
+        "osm_id": "node/9440272233",
+        "name": "汉堡王",
+        "lat": 28.1674352,
+        "lon": 112.9284457,
+        "type": "fast_food",
+        "tags": {
+          "amenity": "fast_food",
+          "brand": "汉堡王",
+          "brand:en": "Burger King",
+          "brand:wikidata": "Q177054",
+          "brand:wikipedia": "zh:漢堡王",
+          "brand:zh": "汉堡王",
+          "cuisine": "burger",
+          "name": "汉堡王",
+          "name:en": "Burger King",
+          "name:zh": "汉堡王",
+          "takeaway": "yes"
+        }
+      },
+      {
+        "osm_id": "node/9440395460",
+        "name": "茶颜悦色",
+        "lat": 28.1670355,
+        "lon": 112.9271806,
+        "type": "cafe",
+        "tags": {
+          "amenity": "cafe",
+          "brand": "茶颜悦色",
+          "brand:en": "Sexytea",
+          "brand:wikidata": "Q60992994",
+          "brand:wikipedia": "zh:茶颜悦色",
+          "brand:zh": "茶颜悦色",
+          "cuisine": "bubble_tea",
+          "name": "茶颜悦色",
+          "name:en": "Sexytea",
+          "name:zh": "茶颜悦色",
+          "takeaway": "yes"
+        }
+      },
+      {
+        "osm_id": "node/9492994567",
+        "name": "交通银行",
+        "lat": 28.1689029,
+        "lon": 112.9328693,
+        "type": "bank",
+        "tags": {
+          "amenity": "bank",
+          "brand": "交通银行",
+          "brand:en": "Bank of Communications",
+          "brand:wikidata": "Q806680",
+          "brand:wikipedia": "en:Bank of Communications",
+          "brand:zh": "交通银行",
+          "name": "交通银行",
+          "name:en": "Bank of Communications",
+          "name:zh": "交通银行"
+        }
+      },
+      {
+        "osm_id": "node/9492994569",
+        "name": "万家灯火",
+        "lat": 28.1688752,
+        "lon": 112.9325183,
+        "type": "restaurant",
+        "tags": {
+          "amenity": "restaurant",
+          "cuisine": "chinese",
+          "name": "万家灯火"
+        }
+      },
+      {
+        "osm_id": "node/10020233821",
+        "name": "交通银行（长沙岳麓山支行）",
+        "lat": 28.1613825,
+        "lon": 112.9414132,
+        "type": "bank",
+        "tags": {
+          "addr:city": "长沙市",
+          "addr:district": "岳麓区",
+          "addr:province": "湖南省",
+          "addr:street": "潇湘中路328号 麓枫和苑1栋",
+          "amenity": "bank",
+          "atm": "yes",
+          "name": "交通银行（长沙岳麓山支行）",
+          "opening_hours": "Mo-Fr 09:00-17:00"
+        }
+      },
+      {
+        "osm_id": "node/10020233822",
+        "name": "美宜佳（德比店）",
+        "lat": 28.1611189,
+        "lon": 112.940921,
+        "type": "convenience",
+        "tags": {
+          "addr:city": "长沙市",
+          "addr:district": "岳麓区",
+          "addr:province": "湖南省",
+          "addr:street": "潇湘中路328号麓枫和苑1栋",
+          "name": "美宜佳（德比店）",
+          "opening_hours": "24/7",
+          "phone": "+86 136 7791 2842",
+          "shop": "convenience"
+        }
+      },
+      {
+        "osm_id": "node/10020233823",
+        "name": "小李小饭",
+        "lat": 28.1610438,
+        "lon": 112.9408741,
+        "type": "restaurant",
+        "tags": {
+          "addr:city": "长沙市",
+          "addr:district": "岳麓区",
+          "addr:province": "湖南省",
+          "addr:street": "潇湘中路",
+          "amenity": "restaurant",
+          "cuisine": "chinese",
+          "name": "小李小饭"
+        }
+      },
+      {
+        "osm_id": "node/10020233826",
+        "name": "长沙农村商业银行（大学城支行）",
+        "lat": 28.1598278,
+        "lon": 112.9404993,
+        "type": "bank",
+        "tags": {
+          "addr:city": "长沙市",
+          "addr:district": "岳麓区",
+          "addr:province": "湖南省",
+          "amenity": "bank",
+          "name": "长沙农村商业银行（大学城支行）"
+        }
+      },
+      {
+        "osm_id": "node/10020233832",
+        "name": "千惠超市（潇湘中路店）",
+        "lat": 28.1605317,
+        "lon": 112.942331,
+        "type": "convenience",
+        "tags": {
+          "addr:city": "长沙市",
+          "addr:district": "岳麓区",
+          "addr:province": "湖南省",
+          "name": "千惠超市（潇湘中路店）",
+          "shop": "convenience"
+        }
+      },
+      {
+        "osm_id": "node/10020233843",
+        "name": "连先生便利店",
+        "lat": 28.1605962,
+        "lon": 112.9412691,
+        "type": "convenience",
+        "tags": {
+          "name": "连先生便利店",
+          "shop": "convenience"
+        }
+      },
+      {
+        "osm_id": "way/308049357",
+        "name": "湖南大学天马二食堂",
+        "lat": 28.1691148,
+        "lon": 112.94014416,
+        "type": "yes",
+        "tags": {
+          "amenity": "restaurant",
+          "building": "yes",
+          "fast_food": "cafeteria",
+          "name": "湖南大学天马二食堂"
+        }
+      },
+      {
+        "osm_id": "way/314215534",
+        "name": "湖南师大天马学生餐厅",
+        "lat": 28.171970199999997,
+        "lon": 112.94156208,
+        "type": "yes",
+        "tags": {
+          "amenity": "restaurant",
+          "building": "yes",
+          "fast_food": "cafeteria",
+          "name": "湖南师大天马学生餐厅"
+        }
+      },
+      {
+        "osm_id": "way/337138974",
+        "name": "德智食堂",
+        "lat": 28.16691598,
+        "lon": 112.9341799,
+        "type": "yes",
+        "tags": {
+          "amenity": "restaurant",
+          "building": "yes",
+          "name": "德智食堂"
+        }
+      },
+      {
+        "osm_id": "way/383091373",
+        "name": "升华服务部",
+        "lat": 28.162594919999997,
+        "lon": 112.92957524,
+        "type": "yes",
+        "tags": {
+          "building": "yes",
+          "name": "升华服务部",
+          "shop": "supermarket"
+        }
+      },
+      {
+        "osm_id": "way/700756216",
+        "name": "创信商贸城",
+        "lat": 28.16727535714286,
+        "lon": 112.92849627142857,
+        "type": "yes",
+        "tags": {
+          "building": "yes",
+          "name": "创信商贸城",
+          "shop": "mall"
+        }
+      },
+      {
+        "osm_id": "way/757850391",
+        "name": "中国银行",
+        "lat": 28.1713727,
+        "lon": 112.92719293999998,
+        "type": "commercial",
+        "tags": {
+          "amenity": "bank",
+          "atm": "yes",
+          "brand": "中国银行",
+          "brand:en": "Bank of China",
+          "brand:wikidata": "Q790068",
+          "brand:wikipedia": "en:Bank of China",
+          "brand:zh": "中国银行",
+          "building": "commercial",
+          "name": "中国银行",
+          "name:en": "Bank of China",
+          "name:zh": "中国银行"
+        }
+      },
+      {
+        "osm_id": "way/1004831814",
+        "name": "悦麓汇",
+        "lat": 28.171959906666665,
+        "lon": 112.93854633333333,
+        "type": "yes",
+        "tags": {
+          "building": "yes",
+          "name": "悦麓汇",
+          "shop": "mall"
+        }
+      },
+      {
+        "osm_id": "way/1007895952",
+        "name": "悦购广场",
+        "lat": 28.1675796,
+        "lon": 112.9299664142857,
+        "type": "yes",
+        "tags": {
+          "building": "yes",
+          "name": "悦购广场",
+          "shop": "mall"
+        }
+      },
+      {
+        "osm_id": "way/1023641970",
+        "name": "麓南商业广场",
+        "lat": 28.1663089,
+        "lon": 112.9273938,
+        "type": "yes",
+        "tags": {
+          "building": "yes",
+          "name": "麓南商业广场",
+          "shop": "mall"
+        }
+      },
+      {
+        "osm_id": "way/1023701101",
+        "name": "麓山美庐",
+        "lat": 28.16784268888889,
+        "lon": 112.93016872222222,
+        "type": "yes",
+        "tags": {
+          "building": "yes",
+          "name": "麓山美庐",
+          "shop": "mall"
+        }
+      }
+    ],
+    "transport": [
+      {
+        "osm_id": "node/711491662",
+        "name": "王家湾东",
+        "lat": 28.1649883,
+        "lon": 112.9243254,
+        "type": "bus_stop",
+        "tags": {
+          "bus": "yes",
+          "highway": "bus_stop",
+          "name": "王家湾东",
+          "public_transport": "platform"
+        }
+      },
+      {
+        "osm_id": "node/1660229551",
+        "name": "中南大学学生公寓",
+        "lat": 28.1589523,
+        "lon": 112.931785,
+        "type": "bus_stop",
+        "tags": {
+          "addr:postcode": "410012",
+          "bus": "yes",
+          "highway": "bus_stop",
+          "name": "中南大学学生公寓",
+          "public_transport": "platform",
+          "wheelchair": "yes"
+        }
+      },
+      {
+        "osm_id": "node/1660236528",
+        "name": "淹鱼塘",
+        "lat": 28.1604727,
+        "lon": 112.9297391,
+        "type": "bus_stop",
+        "tags": {
+          "bus": "yes",
+          "highway": "bus_stop",
+          "name": "淹鱼塘",
+          "public_transport": "platform",
+          "shelter": "yes",
+          "tactile_paving": "yes"
+        }
+      },
+      {
+        "osm_id": "node/3130994654",
+        "name": "科教新村",
+        "lat": 28.1716966,
+        "lon": 112.9418172,
+        "type": "bus_stop",
+        "tags": {
+          "bus": "yes",
+          "highway": "bus_stop",
+          "name": "科教新村",
+          "public_transport": "platform"
+        }
+      },
+      {
+        "osm_id": "node/3130994655",
+        "name": "天马山东",
+        "lat": 28.1744461,
+        "lon": 112.9463485,
+        "type": "bus_stop",
+        "tags": {
+          "bus": "yes",
+          "highway": "bus_stop",
+          "name": "天马山东",
+          "public_transport": "platform"
+        }
+      },
+      {
+        "osm_id": "node/3130994656",
+        "name": "阜埠河路口",
+        "lat": 28.1678111,
+        "lon": 112.9482401,
+        "type": "bus_stop",
+        "tags": {
+          "highway": "bus_stop",
+          "name": "阜埠河路口"
+        }
+      },
+      {
+        "osm_id": "node/3130994657",
+        "name": "天马山东",
+        "lat": 28.1764723,
+        "lon": 112.9475759,
+        "type": "bus_stop",
+        "tags": {
+          "bus": "yes",
+          "highway": "bus_stop",
+          "name": "天马山东",
+          "public_transport": "platform"
+        }
+      },
+      {
+        "osm_id": "node/3133310983",
+        "name": "麓山南路口",
+        "lat": 28.1721813,
+        "lon": 112.9396929,
+        "type": "bus_stop",
+        "tags": {
+          "bus": "yes",
+          "highway": "bus_stop",
+          "name": "麓山南路口",
+          "public_transport": "platform"
+        }
+      },
+      {
+        "osm_id": "node/3184256884",
+        "name": "湖南大学",
+        "lat": 28.1835267,
+        "lon": 112.9480778,
+        "type": "bus_stop",
+        "tags": {
+          "bus": "yes",
+          "highway": "bus_stop",
+          "name": "湖南大学",
+          "public_transport": "platform"
+        }
+      },
+      {
+        "osm_id": "node/3184256903",
+        "name": "阜埠河地铁站",
+        "lat": 28.1691183,
+        "lon": 112.9427185,
+        "type": "bus_stop",
+        "tags": {
+          "bus": "yes",
+          "highway": "bus_stop",
+          "name": "阜埠河地铁站",
+          "public_transport": "platform"
+        }
+      },
+      {
+        "osm_id": "node/3184256904",
+        "name": "阜埠河地铁站",
+        "lat": 28.1691546,
+        "lon": 112.9428688,
+        "type": "bus_stop",
+        "tags": {
+          "bus": "yes",
+          "highway": "bus_stop",
+          "name": "阜埠河地铁站",
+          "public_transport": "platform"
+        }
+      },
+      {
+        "osm_id": "node/3184256919",
+        "name": "阜埠河路",
+        "lat": 28.1670981,
+        "lon": 112.9463891,
+        "type": "bus_stop",
+        "tags": {
+          "bus": "yes",
+          "highway": "bus_stop",
+          "name": "阜埠河路",
+          "public_transport": "platform"
+        }
+      },
+      {
+        "osm_id": "node/3184256920",
+        "name": "阜埠河路",
+        "lat": 28.1671667,
+        "lon": 112.9466323,
+        "type": "bus_stop",
+        "tags": {
+          "bus": "yes",
+          "highway": "bus_stop",
+          "name": "阜埠河路",
+          "public_transport": "platform"
+        }
+      },
+      {
+        "osm_id": "node/3188074219",
+        "name": "渔湾市",
+        "lat": 28.1765457,
+        "lon": 112.9398995,
+        "type": "bus_stop",
+        "tags": {
+          "bus": "yes",
+          "highway": "bus_stop",
+          "name": "渔湾市",
+          "public_transport": "platform"
+        }
+      },
+      {
+        "osm_id": "node/3188074220",
+        "name": "荫马塘",
+        "lat": 28.1794886,
+        "lon": 112.9395302,
+        "type": "bus_stop",
+        "tags": {
+          "bus": "yes",
+          "highway": "bus_stop",
+          "name": "荫马塘",
+          "public_transport": "platform"
+        }
+      },
+      {
+        "osm_id": "node/3188074221",
+        "name": "渔湾市",
+        "lat": 28.1771209,
+        "lon": 112.940034,
+        "type": "bus_stop",
+        "tags": {
+          "bus": "yes",
+          "highway": "bus_stop",
+          "name": "渔湾市",
+          "public_transport": "platform"
+        }
+      },
+      {
+        "osm_id": "node/3287267939",
+        "name": "八字墙",
+        "lat": 28.172011,
+        "lon": 112.9376446,
+        "type": "bus_stop",
+        "tags": {
+          "bus": "yes",
+          "highway": "bus_stop",
+          "name": "八字墙",
+          "public_transport": "platform"
+        }
+      },
+      {
+        "osm_id": "node/3287267940",
+        "name": "八字墙",
+        "lat": 28.1722405,
+        "lon": 112.937911,
+        "type": "bus_stop",
+        "tags": {
+          "bus": "yes",
+          "highway": "bus_stop",
+          "name": "八字墙",
+          "public_transport": "platform"
+        }
+      },
+      {
+        "osm_id": "node/3846694454",
+        "name": "",
+        "lat": 28.1648796,
+        "lon": 112.9283717,
+        "type": "parking",
+        "tags": {
+          "amenity": "parking",
+          "layer": "-1",
+          "parking": "underground"
+        }
+      },
+      {
+        "osm_id": "node/3860823686",
+        "name": "东大门;校车停靠站",
+        "lat": 28.1543327,
+        "lon": 112.9452421,
+        "type": "bus_stop",
+        "tags": {
+          "barrier": "gate",
+          "bus": "yes",
+          "highway": "bus_stop",
+          "name": "东大门;校车停靠站",
+          "public_transport": "platform"
+        }
+      },
+      {
+        "osm_id": "node/3861012158",
+        "name": "中南大学新校区",
+        "lat": 28.1545978,
+        "lon": 112.9378544,
+        "type": "bus_stop",
+        "tags": {
+          "bus": "yes",
+          "highway": "bus_stop",
+          "name": "中南大学新校区",
+          "public_transport": "platform"
+        }
+      },
+      {
+        "osm_id": "node/3861032964",
+        "name": "",
+        "lat": 28.1523497,
+        "lon": 112.9350741,
+        "type": "bus_stop",
+        "tags": {
+          "bus": "yes",
+          "highway": "bus_stop",
+          "public_transport": "platform",
+          "shelter": "no",
+          "tactile_paving": "no"
+        }
+      },
+      {
+        "osm_id": "node/4814789367",
+        "name": "磨子山",
+        "lat": 28.1637793,
+        "lon": 112.927469,
+        "type": "bus_stop",
+        "tags": {
+          "bench": "no",
+          "bus": "yes",
+          "highway": "bus_stop",
+          "name": "磨子山",
+          "public_transport": "platform",
+          "shelter": "yes",
+          "tactile_paving": "yes"
+        }
+      },
+      {
+        "osm_id": "node/4814789368",
+        "name": "磨子山",
+        "lat": 28.1637732,
+        "lon": 112.9273904,
+        "type": "bus_stop",
+        "tags": {
+          "bench": "no",
+          "bus": "yes",
+          "highway": "bus_stop",
+          "name": "磨子山",
+          "public_transport": "platform",
+          "shelter": "yes",
+          "tactile_paving": "yes"
+        }
+      },
+      {
+        "osm_id": "node/5697304710",
+        "name": "洋湖新城",
+        "lat": 28.1319375,
+        "lon": 112.9396691,
+        "type": "stop",
+        "tags": {
+          "name": "洋湖新城",
+          "public_transport": "stop_position",
+          "railway": "stop",
+          "subway": "yes"
+        }
+      },
+      {
+        "osm_id": "node/5697304719",
+        "name": "阜埠河",
+        "lat": 28.1692583,
+        "lon": 112.942423,
+        "type": "stop",
+        "tags": {
+          "name": "阜埠河",
+          "name:en": "Fubuhe",
+          "public_transport": "stop_position",
+          "railway": "stop",
+          "subway": "yes"
+        }
+      },
+      {
+        "osm_id": "node/5697308825",
+        "name": "灵官渡",
+        "lat": 28.1826075,
+        "lon": 112.9650494,
+        "type": "stop",
+        "tags": {
+          "name": "灵官渡",
+          "public_transport": "stop_position",
+          "railway": "stop",
+          "subway": "yes"
+        }
+      },
+      {
+        "osm_id": "node/5697308832",
+        "name": "东塘",
+        "lat": 28.1728741,
+        "lon": 112.9880424,
+        "type": "stop",
+        "tags": {
+          "name": "东塘",
+          "public_transport": "stop_position",
+          "railway": "stop",
+          "subway": "yes"
+        }
+      },
+      {
+        "osm_id": "node/5714508503",
+        "name": "中南大学",
+        "lat": 28.167628,
+        "lon": 112.9281845,
+        "type": "bus_stop",
+        "tags": {
+          "bus": "yes",
+          "highway": "bus_stop",
+          "name": "中南大学",
+          "public_transport": "platform"
+        }
+      },
+      {
+        "osm_id": "node/5714522628",
+        "name": "左家垅西",
+        "lat": 28.1685006,
+        "lon": 112.9304729,
+        "type": "bus_stop",
+        "tags": {
+          "bus": "yes",
+          "highway": "bus_stop",
+          "name": "左家垅西",
+          "public_transport": "platform"
+        }
+      },
+      {
+        "osm_id": "node/5721948296",
+        "name": "后湖小区北",
+        "lat": 28.1580085,
+        "lon": 112.933378,
+        "type": "bus_stop",
+        "tags": {
+          "bus": "yes",
+          "highway": "bus_stop",
+          "name": "后湖小区北",
+          "public_transport": "platform"
+        }
+      },
+      {
+        "osm_id": "node/5724336929",
+        "name": "图书馆前自行车停靠点",
+        "lat": 28.1531506,
+        "lon": 112.9378233,
+        "type": "parking",
+        "tags": {
+          "amenity": "parking",
+          "name": "图书馆前自行车停靠点",
+          "operator": "婕妤"
+        }
+      },
+      {
+        "osm_id": "node/5724482045",
+        "name": "沙泥塘",
+        "lat": 28.158215,
+        "lon": 112.9268135,
+        "type": "bus_stop",
+        "tags": {
+          "bus": "yes",
+          "highway": "bus_stop",
+          "name": "沙泥塘",
+          "public_transport": "platform"
+        }
+      },
+      {
+        "osm_id": "node/6098157681",
+        "name": "阿弥岭",
+        "lat": 28.1779811,
+        "lon": 113.0024956,
+        "type": "stop",
+        "tags": {
+          "name": "阿弥岭",
+          "public_transport": "stop_position",
+          "railway": "stop",
+          "subway": "yes"
+        }
+      },
+      {
+        "osm_id": "node/6147461112",
+        "name": "山塘",
+        "lat": 28.1021885,
+        "lon": 112.9204207,
+        "type": "stop",
+        "tags": {
+          "name": "山塘",
+          "name:en": "Shantang",
+          "public_transport": "stop_position",
+          "railway": "stop",
+          "subway": "yes"
+        }
+      },
+      {
+        "osm_id": "node/6504722427",
+        "name": "碧沙湖",
+        "lat": 28.1678282,
+        "lon": 112.9622762,
+        "type": "stop",
+        "tags": {
+          "name": "碧沙湖",
+          "name:en": "Bishahu",
+          "public_transport": "stop_position",
+          "railway": "stop",
+          "subway": "yes"
+        }
+      },
+      {
+        "osm_id": "node/6504722436",
+        "name": "阜埠河",
+        "lat": 28.1697183,
+        "lon": 112.9421883,
+        "type": "stop",
+        "tags": {
+          "name": "阜埠河",
+          "name:en": "Fubuhe",
+          "public_transport": "stop_position",
+          "railway": "stop",
+          "subway": "yes"
+        }
+      },
+      {
+        "osm_id": "node/6504722446",
+        "name": "湖南大学",
+        "lat": 28.1835433,
+        "lon": 112.941392,
+        "type": "stop",
+        "tags": {
+          "name": "湖南大学",
+          "name:en": "Hunan University",
+          "public_transport": "stop_position",
+          "railway": "stop",
+          "subway": "yes"
+        }
+      },
+      {
+        "osm_id": "node/6504722452",
+        "name": "湖南师大",
+        "lat": 28.1893998,
+        "lon": 112.9427735,
+        "type": "stop",
+        "tags": {
+          "name": "湖南师大",
+          "name:en": "Hunan Normal University",
+          "public_transport": "stop_position",
+          "railway": "stop",
+          "subway": "yes"
+        }
+      },
+      {
+        "osm_id": "node/7666490743",
+        "name": "中南大学",
+        "lat": 28.1578368,
+        "lon": 112.9322974,
+        "type": "station",
+        "tags": {
+          "name": "中南大学",
+          "name:en": "Central South University",
+          "public_transport": "station",
+          "railway": "station",
+          "station": "subway",
+          "subway": "yes",
+          "wikidata": "Q98828304",
+          "wikipedia": "zh:中南大学站"
+        }
+      },
+      {
+        "osm_id": "node/7666490744",
+        "name": "阜埠河",
+        "lat": 28.1693308,
+        "lon": 112.9425253,
+        "type": "station",
+        "tags": {
+          "name": "阜埠河",
+          "name:en": "Fubuhe",
+          "public_transport": "station",
+          "railway": "station",
+          "station": "subway",
+          "subway": "yes",
+          "wikidata": "Q63965773",
+          "wikipedia": "zh:阜埠河站"
+        }
+      },
+      {
+        "osm_id": "node/8378840564",
+        "name": "洋湖湿地",
+        "lat": 28.1182626,
+        "lon": 112.9334473,
+        "type": "stop",
+        "tags": {
+          "name": "洋湖湿地",
+          "public_transport": "stop_position",
+          "railway": "stop",
+          "subway": "yes"
+        }
+      },
+      {
+        "osm_id": "node/8378840670",
+        "name": "阳光",
+        "lat": 28.1454725,
+        "lon": 112.9316308,
+        "type": "stop",
+        "tags": {
+          "name": "阳光",
+          "public_transport": "stop_position",
+          "railway": "stop",
+          "subway": "yes"
+        }
+      },
+      {
+        "osm_id": "node/8378840676",
+        "name": "中南大学",
+        "lat": 28.1578316,
+        "lon": 112.9323562,
+        "type": "stop",
+        "tags": {
+          "name": "中南大学",
+          "public_transport": "stop_position",
+          "railway": "stop",
+          "subway": "yes"
+        }
+      },
+      {
+        "osm_id": "node/8378840708",
+        "name": "朝阳村",
+        "lat": 28.189632,
+        "lon": 113.0051841,
+        "type": "stop",
+        "tags": {
+          "name": "朝阳村",
+          "public_transport": "stop_position",
+          "railway": "stop",
+          "subway": "yes"
+        }
+      },
+      {
+        "osm_id": "node/8977736260",
+        "name": "淹鱼塘",
+        "lat": 28.1605137,
+        "lon": 112.9298029,
+        "type": "bus_stop",
+        "tags": {
+          "bus": "yes",
+          "highway": "bus_stop",
+          "name": "淹鱼塘",
+          "public_transport": "platform",
+          "shelter": "yes",
+          "tactile_paving": "yes"
+        }
+      },
+      {
+        "osm_id": "node/9299427870",
+        "name": "左家垅",
+        "lat": 28.1696491,
+        "lon": 112.9342207,
+        "type": "bus_stop",
+        "tags": {
+          "bus": "yes",
+          "highway": "bus_stop",
+          "name": "左家垅",
+          "name:en": "Zuojialong bus station",
+          "name:zh": "左家垅",
+          "public_transport": "platform"
+        }
+      },
+      {
+        "osm_id": "node/9439673317",
+        "name": "中南大学",
+        "lat": 28.1665304,
+        "lon": 112.9269595,
+        "type": "bus_stop",
+        "tags": {
+          "bus": "yes",
+          "highway": "bus_stop",
+          "name": "中南大学",
+          "public_transport": "platform"
+        }
+      },
+      {
+        "osm_id": "node/9440261614",
+        "name": "中南大学",
+        "lat": 28.1671204,
+        "lon": 112.9262621,
+        "type": "bus_stop",
+        "tags": {
+          "bus": "yes",
+          "highway": "bus_stop",
+          "name": "中南大学",
+          "public_transport": "platform"
+        }
+      },
+      {
+        "osm_id": "node/9441042971",
+        "name": "麓山南路口",
+        "lat": 28.1724761,
+        "lon": 112.9393599,
+        "type": "bus_stop",
+        "tags": {
+          "bus": "yes",
+          "highway": "bus_stop",
+          "name": "麓山南路口",
+          "public_transport": "platform"
+        }
+      },
+      {
+        "osm_id": "node/9448565076",
+        "name": "王家湾东",
+        "lat": 28.1649314,
+        "lon": 112.9236135,
+        "type": "bus_stop",
+        "tags": {
+          "bus": "yes",
+          "highway": "bus_stop",
+          "name": "王家湾东",
+          "public_transport": "platform"
+        }
+      },
+      {
+        "osm_id": "node/9448565077",
+        "name": "王家湾",
+        "lat": 28.1649234,
+        "lon": 112.9225037,
+        "type": "bus_stop",
+        "tags": {
+          "bus": "yes",
+          "highway": "bus_stop",
+          "name": "王家湾",
+          "public_transport": "platform"
+        }
+      },
+      {
+        "osm_id": "node/9464486642",
+        "name": "",
+        "lat": 28.153224,
+        "lon": 112.9281416,
+        "type": "parking",
+        "tags": {
+          "amenity": "parking",
+          "layer": "-1",
+          "parking": "underground"
+        }
+      },
+      {
+        "osm_id": "node/9464486652",
+        "name": "",
+        "lat": 28.1539619,
+        "lon": 112.9277145,
+        "type": "parking",
+        "tags": {
+          "amenity": "parking",
+          "layer": "-1",
+          "parking": "underground"
+        }
+      },
+      {
+        "osm_id": "node/9492064531",
+        "name": "后湖小区北",
+        "lat": 28.158245,
+        "lon": 112.9329949,
+        "type": "bus_stop",
+        "tags": {
+          "bus": "yes",
+          "highway": "bus_stop",
+          "name": "后湖小区北",
+          "public_transport": "platform"
+        }
+      },
+      {
+        "osm_id": "node/9492064532",
+        "name": "中南大学地铁站",
+        "lat": 28.1576363,
+        "lon": 112.9321463,
+        "type": "bus_stop",
+        "tags": {
+          "bus": "yes",
+          "highway": "bus_stop",
+          "name": "中南大学地铁站",
+          "public_transport": "platform"
+        }
+      },
+      {
+        "osm_id": "node/9492064533",
+        "name": "中南大学地铁站",
+        "lat": 28.1556939,
+        "lon": 112.9319831,
+        "type": "bus_stop",
+        "tags": {
+          "bus": "yes",
+          "highway": "bus_stop",
+          "name": "中南大学地铁站",
+          "public_transport": "platform"
+        }
+      },
+      {
+        "osm_id": "node/9492064534",
+        "name": "后湖小区南",
+        "lat": 28.1547552,
+        "lon": 112.9328259,
+        "type": "bus_stop",
+        "tags": {
+          "bus": "yes",
+          "highway": "bus_stop",
+          "name": "后湖小区南",
+          "public_transport": "platform"
+        }
+      },
+      {
+        "osm_id": "node/9492064535",
+        "name": "后湖小区南",
+        "lat": 28.1547873,
+        "lon": 112.9346779,
+        "type": "bus_stop",
+        "tags": {
+          "bus": "yes",
+          "highway": "bus_stop",
+          "name": "后湖小区南",
+          "public_transport": "platform"
+        }
+      },
+      {
+        "osm_id": "node/9492064536",
+        "name": "后湖小区东",
+        "lat": 28.155194,
+        "lon": 112.9359086,
+        "type": "bus_stop",
+        "tags": {
+          "bus": "yes",
+          "highway": "bus_stop",
+          "name": "后湖小区东",
+          "public_transport": "platform"
+        }
+      },
+      {
+        "osm_id": "node/9492064537",
+        "name": "后湖小区东",
+        "lat": 28.1550748,
+        "lon": 112.9359785,
+        "type": "bus_stop",
+        "tags": {
+          "bus": "yes",
+          "highway": "bus_stop",
+          "name": "后湖小区东",
+          "public_transport": "platform"
+        }
+      },
+      {
+        "osm_id": "node/9492064538",
+        "name": "中南大学新校区",
+        "lat": 28.154703,
+        "lon": 112.937516,
+        "type": "bus_stop",
+        "tags": {
+          "bus": "yes",
+          "highway": "bus_stop",
+          "name": "中南大学新校区",
+          "public_transport": "platform"
+        }
+      },
+      {
+        "osm_id": "node/9492064645",
+        "name": "左家垅西",
+        "lat": 28.1689051,
+        "lon": 112.9319225,
+        "type": "bus_stop",
+        "tags": {
+          "bus": "yes",
+          "highway": "bus_stop",
+          "name": "左家垅西",
+          "public_transport": "platform"
+        }
+      },
+      {
+        "osm_id": "node/9501052874",
+        "name": "靳江路口",
+        "lat": 28.153762,
+        "lon": 112.9459697,
+        "type": "bus_stop",
+        "tags": {
+          "bus": "yes",
+          "highway": "bus_stop",
+          "name": "靳江路口",
+          "public_transport": "platform"
+        }
+      },
+      {
+        "osm_id": "node/9501052875",
+        "name": "靳江路口",
+        "lat": 28.1534988,
+        "lon": 112.9458057,
+        "type": "bus_stop",
+        "tags": {
+          "bus": "yes",
+          "highway": "bus_stop",
+          "name": "靳江路口",
+          "public_transport": "platform"
+        }
+      },
+      {
+        "osm_id": "node/9501052876",
+        "name": "后湖",
+        "lat": 28.159742,
+        "lon": 112.9475635,
+        "type": "bus_stop",
+        "tags": {
+          "bus": "yes",
+          "highway": "bus_stop",
+          "name": "后湖",
+          "public_transport": "platform"
+        }
+      },
+      {
+        "osm_id": "node/9501052877",
+        "name": "后湖",
+        "lat": 28.1598359,
+        "lon": 112.9474643,
+        "type": "bus_stop",
+        "tags": {
+          "bus": "yes",
+          "highway": "bus_stop",
+          "name": "后湖",
+          "public_transport": "platform"
+        }
+      },
+      {
+        "osm_id": "node/9501052878",
+        "name": "实竹塘",
+        "lat": 28.1574028,
+        "lon": 112.9372539,
+        "type": "bus_stop",
+        "tags": {
+          "bus": "yes",
+          "highway": "bus_stop",
+          "name": "实竹塘",
+          "public_transport": "platform"
+        }
+      },
+      {
+        "osm_id": "node/9501052879",
+        "name": "实竹塘",
+        "lat": 28.1577543,
+        "lon": 112.9385228,
+        "type": "bus_stop",
+        "tags": {
+          "bus": "yes",
+          "highway": "bus_stop",
+          "name": "实竹塘",
+          "public_transport": "platform"
+        }
+      },
+      {
+        "osm_id": "node/9501052880",
+        "name": "唐家洲",
+        "lat": 28.1624136,
+        "lon": 112.9414212,
+        "type": "bus_stop",
+        "tags": {
+          "bus": "yes",
+          "highway": "bus_stop",
+          "name": "唐家洲",
+          "public_transport": "platform"
+        }
+      },
+      {
+        "osm_id": "node/9501052881",
+        "name": "唐家洲",
+        "lat": 28.1608953,
+        "lon": 112.940399,
+        "type": "bus_stop",
+        "tags": {
+          "bus": "yes",
+          "highway": "bus_stop",
+          "name": "唐家洲",
+          "public_transport": "platform"
+        }
+      },
+      {
+        "osm_id": "node/9501052882",
+        "name": "天马村",
+        "lat": 28.1668668,
+        "lon": 112.9443659,
+        "type": "bus_stop",
+        "tags": {
+          "bus": "yes",
+          "highway": "bus_stop",
+          "name": "天马村",
+          "public_transport": "platform"
+        }
+      },
+      {
+        "osm_id": "node/9501052883",
+        "name": "天马村",
+        "lat": 28.1668595,
+        "lon": 112.9444626,
+        "type": "bus_stop",
+        "tags": {
+          "bus": "yes",
+          "highway": "bus_stop",
+          "name": "天马村",
+          "public_transport": "platform"
+        }
+      },
+      {
+        "osm_id": "node/9501052884",
+        "name": "猴子石大桥北",
+        "lat": 28.1482588,
+        "lon": 112.9453225,
+        "type": "bus_stop",
+        "tags": {
+          "bus": "yes",
+          "highway": "bus_stop",
+          "name": "猴子石大桥北",
+          "public_transport": "platform"
+        }
+      },
+      {
+        "osm_id": "node/9501052889",
+        "name": "荫马塘",
+        "lat": 28.1796721,
+        "lon": 112.9394392,
+        "type": "bus_stop",
+        "tags": {
+          "bus": "yes",
+          "highway": "bus_stop",
+          "name": "荫马塘",
+          "public_transport": "platform"
+        }
+      },
+      {
+        "osm_id": "node/9501052893",
+        "name": "阜埠河路口",
+        "lat": 28.1659708,
+        "lon": 112.9483595,
+        "type": "bus_stop",
+        "tags": {
+          "bus": "yes",
+          "highway": "bus_stop",
+          "name": "阜埠河路口",
+          "public_transport": "platform"
+        }
+      },
+      {
+        "osm_id": "node/9501052894",
+        "name": "天凤社区",
+        "lat": 28.1613406,
+        "lon": 112.9443939,
+        "type": "bus_stop",
+        "tags": {
+          "bus": "yes",
+          "highway": "bus_stop",
+          "name": "天凤社区",
+          "public_transport": "platform"
+        }
+      },
+      {
+        "osm_id": "node/9501097190",
+        "name": "清水路公交首末站",
+        "lat": 28.1578607,
+        "lon": 112.9352078,
+        "type": "bus_stop",
+        "tags": {
+          "bus": "yes",
+          "highway": "bus_stop",
+          "name": "清水路公交首末站",
+          "public_transport": "platform"
+        }
+      },
+      {
+        "osm_id": "node/9503200454",
+        "name": "靳江路潇湘路口",
+        "lat": 28.1554065,
+        "lon": 112.9446272,
+        "type": "bus_stop",
+        "tags": {
+          "bus": "yes",
+          "highway": "bus_stop",
+          "name": "靳江路潇湘路口",
+          "public_transport": "platform"
+        }
+      },
+      {
+        "osm_id": "node/9503200455",
+        "name": "靳江路潇湘路口",
+        "lat": 28.1551265,
+        "lon": 112.9433314,
+        "type": "bus_stop",
+        "tags": {
+          "bus": "yes",
+          "highway": "bus_stop",
+          "name": "靳江路潇湘路口",
+          "public_transport": "platform"
+        }
+      },
+      {
+        "osm_id": "node/9509812811",
+        "name": "科教新村",
+        "lat": 28.171533,
+        "lon": 112.9416257,
+        "type": "bus_stop",
+        "tags": {
+          "bus": "yes",
+          "highway": "bus_stop",
+          "name": "科教新村",
+          "public_transport": "platform"
+        }
+      },
+      {
+        "osm_id": "node/9509812812",
+        "name": "天马山东",
+        "lat": 28.1740307,
+        "lon": 112.9455356,
+        "type": "bus_stop",
+        "tags": {
+          "bus": "yes",
+          "highway": "bus_stop",
+          "name": "天马山东",
+          "public_transport": "platform"
+        }
+      },
+      {
+        "osm_id": "node/9509908860",
+        "name": "桃子湖路口",
+        "lat": 28.1889297,
+        "lon": 112.9493325,
+        "type": "bus_stop",
+        "tags": {
+          "bus": "yes",
+          "highway": "bus_stop",
+          "name": "桃子湖路口",
+          "public_transport": "platform"
+        }
+      },
+      {
+        "osm_id": "node/9509908863",
+        "name": "新民路东",
+        "lat": 28.1940245,
+        "lon": 112.9501651,
+        "type": "bus_stop",
+        "tags": {
+          "bus": "yes",
+          "highway": "bus_stop",
+          "name": "新民路东",
+          "public_transport": "platform"
+        }
+      },
+      {
+        "osm_id": "node/9509908864",
+        "name": "学堂坡",
+        "lat": 28.1908292,
+        "lon": 112.94971,
+        "type": "bus_stop",
+        "tags": {
+          "bus": "yes",
+          "highway": "bus_stop",
+          "name": "学堂坡",
+          "public_transport": "platform"
+        }
+      },
+      {
+        "osm_id": "node/9509908865",
+        "name": "桃子湖路口",
+        "lat": 28.1859926,
+        "lon": 112.9483363,
+        "type": "bus_stop",
+        "tags": {
+          "bus": "yes",
+          "highway": "bus_stop",
+          "name": "桃子湖路口",
+          "public_transport": "platform"
+        }
+      },
+      {
+        "osm_id": "node/9759305594",
+        "name": "山塘",
+        "lat": 28.1022371,
+        "lon": 112.9203,
+        "type": "stop",
+        "tags": {
+          "name": "山塘",
+          "name:en": "Shantang",
+          "public_transport": "stop_position",
+          "railway": "stop",
+          "subway": "yes"
+        }
+      },
+      {
+        "osm_id": "node/9759323017",
+        "name": "洋湖湿地",
+        "lat": 28.1182927,
+        "lon": 112.9333738,
+        "type": "stop",
+        "tags": {
+          "name": "洋湖湿地",
+          "public_transport": "stop_position",
+          "railway": "stop",
+          "subway": "yes"
+        }
+      },
+      {
+        "osm_id": "node/9759323034",
+        "name": "洋湖新城",
+        "lat": 28.1319314,
+        "lon": 112.9395715,
+        "type": "stop",
+        "tags": {
+          "name": "洋湖新城",
+          "public_transport": "stop_position",
+          "railway": "stop",
+          "subway": "yes"
+        }
+      },
+      {
+        "osm_id": "node/9759323061",
+        "name": "阳光",
+        "lat": 28.1454684,
+        "lon": 112.9315357,
+        "type": "stop",
+        "tags": {
+          "name": "阳光",
+          "public_transport": "stop_position",
+          "railway": "stop",
+          "subway": "yes"
+        }
+      },
+      {
+        "osm_id": "node/9759323070",
+        "name": "中南大学",
+        "lat": 28.1578891,
+        "lon": 112.9322074,
+        "type": "stop",
+        "tags": {
+          "name": "中南大学",
+          "public_transport": "stop_position",
+          "railway": "stop",
+          "subway": "yes"
+        }
+      },
+      {
+        "osm_id": "node/9759323086",
+        "name": "阜埠河",
+        "lat": 28.1693275,
+        "lon": 112.9423252,
+        "type": "stop",
+        "tags": {
+          "name": "阜埠河",
+          "name:en": "Fubuhe",
+          "public_transport": "stop_position",
+          "railway": "stop",
+          "subway": "yes"
+        }
+      },
+      {
+        "osm_id": "node/9759323099",
+        "name": "灵官渡",
+        "lat": 28.1827711,
+        "lon": 112.9650688,
+        "type": "stop",
+        "tags": {
+          "name": "灵官渡",
+          "name:en": "Lingguandu",
+          "public_transport": "stop_position",
+          "railway": "stop",
+          "subway": "yes"
+        }
+      },
+      {
+        "osm_id": "node/9759323111",
+        "name": "东塘",
+        "lat": 28.1729971,
+        "lon": 112.9880769,
+        "type": "stop",
+        "tags": {
+          "name": "东塘",
+          "public_transport": "stop_position",
+          "railway": "stop",
+          "subway": "yes"
+        }
+      },
+      {
+        "osm_id": "node/9759323125",
+        "name": "阿弥岭",
+        "lat": 28.178055,
+        "lon": 113.0024047,
+        "type": "stop",
+        "tags": {
+          "name": "阿弥岭",
+          "public_transport": "stop_position",
+          "railway": "stop",
+          "subway": "yes"
+        }
+      },
+      {
+        "osm_id": "node/9759323131",
+        "name": "朝阳村",
+        "lat": 28.1896586,
+        "lon": 113.0050299,
+        "type": "stop",
+        "tags": {
+          "name": "朝阳村",
+          "public_transport": "stop_position",
+          "railway": "stop",
+          "subway": "yes"
+        }
+      },
+      {
+        "osm_id": "node/9759323134",
+        "name": "长沙火车站",
+        "lat": 28.1975665,
+        "lon": 113.0054022,
+        "type": "stop",
+        "tags": {
+          "name": "长沙火车站",
+          "name:en": "Railway Station",
+          "public_transport": "stop_position",
+          "railway": "stop",
+          "subway": "yes"
+        }
+      },
+      {
+        "osm_id": "node/9759445221",
+        "name": "桂花公园",
+        "lat": 28.1739902,
+        "lon": 112.9958446,
+        "type": "stop",
+        "tags": {
+          "name": "桂花公园",
+          "public_transport": "stop_position",
+          "railway": "stop",
+          "subway": "yes"
+        }
+      },
+      {
+        "osm_id": "node/9759445222",
+        "name": "桂花公园",
+        "lat": 28.1738777,
+        "lon": 112.9958464,
+        "type": "stop",
+        "tags": {
+          "name": "桂花公园",
+          "public_transport": "stop_position",
+          "railway": "stop",
+          "subway": "yes"
+        }
+      },
+      {
+        "osm_id": "node/9759445223",
+        "name": "侯家塘",
+        "lat": 28.1772887,
+        "lon": 112.9766006,
+        "type": "stop",
+        "tags": {
+          "name": "侯家塘",
+          "name:en": "Houjiatang",
+          "public_transport": "stop_position",
+          "railway": "stop",
+          "subway": "yes"
+        }
+      },
+      {
+        "osm_id": "node/9759445224",
+        "name": "侯家塘",
+        "lat": 28.1773771,
+        "lon": 112.9766571,
+        "type": "stop",
+        "tags": {
+          "name": "侯家塘",
+          "name:en": "Houjiatang",
+          "public_transport": "stop_position",
+          "railway": "stop",
+          "subway": "yes"
+        }
+      },
+      {
+        "osm_id": "node/10023084409",
+        "name": "",
+        "lat": 28.1584999,
+        "lon": 112.940009,
+        "type": "parking",
+        "tags": {
+          "access": "yes",
+          "amenity": "parking",
+          "layer": "1",
+          "operator": "地下停车场出入口",
+          "parking": "underground"
+        }
+      },
+      {
+        "osm_id": "node/10023084410",
+        "name": "",
+        "lat": 28.158384,
+        "lon": 112.9411597,
+        "type": "parking",
+        "tags": {
+          "access": "yes",
+          "amenity": "parking",
+          "layer": "1",
+          "operator": "地下停车场出入口",
+          "parking": "underground"
+        }
+      },
+      {
+        "osm_id": "node/11092706406",
+        "name": "碧沙湖",
+        "lat": 28.1677259,
+        "lon": 112.9622913,
+        "type": "stop",
+        "tags": {
+          "name": "碧沙湖",
+          "name:en": "Bishahu",
+          "public_transport": "stop_position",
+          "railway": "stop",
+          "subway": "yes"
+        }
+      },
+      {
+        "osm_id": "node/11097316340",
+        "name": "阜埠河",
+        "lat": 28.1696253,
+        "lon": 112.942068,
+        "type": "stop",
+        "tags": {
+          "name": "阜埠河",
+          "name:en": "Fubuhe",
+          "public_transport": "stop_position",
+          "railway": "stop",
+          "subway": "yes"
+        }
+      },
+      {
+        "osm_id": "node/11097465512",
+        "name": "湖南大学",
+        "lat": 28.1835503,
+        "lon": 112.9412557,
+        "type": "stop",
+        "tags": {
+          "name": "湖南大学",
+          "name:en": "Hunan University",
+          "public_transport": "stop_position",
+          "railway": "stop",
+          "subway": "yes"
+        }
+      },
+      {
+        "osm_id": "node/11097465518",
+        "name": "湖南师大",
+        "lat": 28.1893927,
+        "lon": 112.9426269,
+        "type": "stop",
+        "tags": {
+          "name": "湖南师大",
+          "name:en": "Hunan Normal University",
+          "public_transport": "stop_position",
+          "railway": "stop",
+          "subway": "yes"
+        }
+      },
+      {
+        "osm_id": "node/11359803017",
+        "name": "湖大德智园学生公寓",
+        "lat": 28.1652835,
+        "lon": 112.9349488,
+        "type": "bus_stop",
+        "tags": {
+          "bus": "yes",
+          "highway": "bus_stop",
+          "name": "湖大德智园学生公寓",
+          "public_transport": "platform"
+        }
+      },
+      {
+        "osm_id": "node/11397544321",
+        "name": "",
+        "lat": 28.1683876,
+        "lon": 112.9419052,
+        "type": "subway_entrance",
+        "tags": {
+          "railway": "subway_entrance",
+          "ref": "2"
+        }
+      },
+      {
+        "osm_id": "node/11397544322",
+        "name": "",
+        "lat": 28.1679992,
+        "lon": 112.9423485,
+        "type": "subway_entrance",
+        "tags": {
+          "railway": "subway_entrance",
+          "ref": "3"
+        }
+      },
+      {
+        "osm_id": "node/11397544323",
+        "name": "",
+        "lat": 28.1695207,
+        "lon": 112.9419585,
+        "type": "subway_entrance",
+        "tags": {
+          "railway": "subway_entrance",
+          "ref": "1"
+        }
+      },
+      {
+        "osm_id": "node/11397544324",
+        "name": "",
+        "lat": 28.1690928,
+        "lon": 112.943157,
+        "type": "subway_entrance",
+        "tags": {
+          "railway": "subway_entrance",
+          "ref": "5"
+        }
+      },
+      {
+        "osm_id": "node/11397544325",
+        "name": "",
+        "lat": 28.1698888,
+        "lon": 112.9421891,
+        "type": "subway_entrance",
+        "tags": {
+          "railway": "subway_entrance",
+          "ref": "7"
+        }
+      },
+      {
+        "osm_id": "node/11397544326",
+        "name": "",
+        "lat": 28.1703647,
+        "lon": 112.9417221,
+        "type": "subway_entrance",
+        "tags": {
+          "railway": "subway_entrance",
+          "ref": "6"
+        }
+      },
+      {
+        "osm_id": "node/11397544327",
+        "name": "",
+        "lat": 28.1706386,
+        "lon": 112.9413364,
+        "type": "subway_entrance",
+        "tags": {
+          "railway": "subway_entrance",
+          "ref": "8"
+        }
+      },
+      {
+        "osm_id": "node/11397544328",
+        "name": "",
+        "lat": 28.1711064,
+        "lon": 112.9411012,
+        "type": "subway_entrance",
+        "tags": {
+          "railway": "subway_entrance",
+          "ref": "9"
+        }
+      },
+      {
+        "osm_id": "node/12989005262",
+        "name": "2",
+        "lat": 28.1579297,
+        "lon": 112.9325292,
+        "type": "subway_entrance",
+        "tags": {
+          "name": "2",
+          "railway": "subway_entrance"
+        }
+      },
+      {
+        "osm_id": "node/12989005263",
+        "name": "3",
+        "lat": 28.1580682,
+        "lon": 112.932064,
+        "type": "subway_entrance",
+        "tags": {
+          "name": "3",
+          "railway": "subway_entrance"
+        }
+      },
+      {
+        "osm_id": "node/12989005264",
+        "name": "4",
+        "lat": 28.1569599,
+        "lon": 112.9318884,
+        "type": "subway_entrance",
+        "tags": {
+          "name": "4",
+          "railway": "subway_entrance"
+        }
+      },
+      {
+        "osm_id": "node/13436838794",
+        "name": "靳江路西二环路口",
+        "lat": 28.1549639,
+        "lon": 112.9301061,
+        "type": "bus_stop",
+        "tags": {
+          "bus": "yes",
+          "highway": "bus_stop",
+          "name": "靳江路西二环路口",
+          "public_transport": "platform"
+        }
+      },
+      {
+        "osm_id": "node/13481260074",
+        "name": "靳江路西二环路口",
+        "lat": 28.1547629,
+        "lon": 112.9278425,
+        "type": "bus_stop",
+        "tags": {
+          "bus": "yes",
+          "highway": "bus_stop",
+          "name": "靳江路西二环路口",
+          "public_transport": "platform"
+        }
+      },
+      {
+        "osm_id": "way/382879472",
+        "name": "学生自行车停放区域",
+        "lat": 28.1630448,
+        "lon": 112.92930468,
+        "type": "bicycle_parking",
+        "tags": {
+          "amenity": "bicycle_parking",
+          "name": "学生自行车停放区域"
+        }
+      },
+      {
+        "osm_id": "way/382879636",
+        "name": "非机动车停放区域",
+        "lat": 28.16248908,
+        "lon": 112.92951990000002,
+        "type": "bicycle_parking",
+        "tags": {
+          "amenity": "bicycle_parking",
+          "name": "非机动车停放区域"
+        }
+      },
+      {
+        "osm_id": "way/382883994",
+        "name": "A座自行车停车场",
+        "lat": 28.1543297875,
+        "lon": 112.9364512625,
+        "type": "bicycle_parking",
+        "tags": {
+          "amenity": "bicycle_parking",
+          "name": "A座自行车停车场"
+        }
+      },
+      {
+        "osm_id": "way/382884347",
+        "name": "",
+        "lat": 28.15493938571429,
+        "lon": 112.94352672857143,
+        "type": "parking",
+        "tags": {
+          "amenity": "parking"
+        }
+      },
+      {
+        "osm_id": "way/382891457",
+        "name": "自行车停车处",
+        "lat": 28.153120528571428,
+        "lon": 112.9337107,
+        "type": "bicycle_parking",
+        "tags": {
+          "amenity": "bicycle_parking",
+          "name": "自行车停车处"
+        }
+      },
+      {
+        "osm_id": "way/601858255",
+        "name": "图书馆前自行车停车场",
+        "lat": 28.15334126,
+        "lon": 112.93851864000001,
+        "type": "bicycle_parking",
+        "tags": {
+          "amenity": "bicycle_parking",
+          "description": "停车场",
+          "name": "图书馆前自行车停车场"
+        }
+      },
+      {
+        "osm_id": "way/791601352",
+        "name": "",
+        "lat": 28.172363259999997,
+        "lon": 112.92609245999999,
+        "type": "parking",
+        "tags": {
+          "amenity": "parking"
+        }
+      },
+      {
+        "osm_id": "way/937309710",
+        "name": "",
+        "lat": 28.169572679999998,
+        "lon": 112.93788563999999,
+        "type": "parking",
+        "tags": {
+          "amenity": "parking"
+        }
+      },
+      {
+        "osm_id": "way/970822829",
+        "name": "二食堂停车场",
+        "lat": 28.162121000000003,
+        "lon": 112.92981,
+        "type": "parking",
+        "tags": {
+          "amenity": "parking",
+          "name": "二食堂停车场"
+        }
+      },
+      {
+        "osm_id": "way/1024575515",
+        "name": "",
+        "lat": 28.1732452,
+        "lon": 112.92674998333332,
+        "type": "parking",
+        "tags": {
+          "amenity": "parking"
+        }
+      },
+      {
+        "osm_id": "way/1026293065",
+        "name": "",
+        "lat": 28.15263172,
+        "lon": 112.92716392,
+        "type": "parking",
+        "tags": {
+          "amenity": "parking"
+        }
+      },
+      {
+        "osm_id": "way/1026293066",
+        "name": "",
+        "lat": 28.1509404875,
+        "lon": 112.9271302,
+        "type": "parking",
+        "tags": {
+          "amenity": "parking"
+        }
+      },
+      {
+        "osm_id": "way/1026539900",
+        "name": "",
+        "lat": 28.15392862,
+        "lon": 112.93926228000001,
+        "type": "parking",
+        "tags": {
+          "amenity": "parking"
+        }
+      },
+      {
+        "osm_id": "way/1026922046",
+        "name": "",
+        "lat": 28.153889236363636,
+        "lon": 112.93734520909092,
+        "type": "parking",
+        "tags": {
+          "amenity": "parking"
+        }
+      },
+      {
+        "osm_id": "way/1026936620",
+        "name": "",
+        "lat": 28.15418755,
+        "lon": 112.93382659,
+        "type": "parking",
+        "tags": {
+          "amenity": "parking"
+        }
+      },
+      {
+        "osm_id": "way/1026936625",
+        "name": "",
+        "lat": 28.15308172,
+        "lon": 112.93343838000001,
+        "type": "parking",
+        "tags": {
+          "amenity": "parking"
+        }
+      },
+      {
+        "osm_id": "way/1026936626",
+        "name": "",
+        "lat": 28.154050159999997,
+        "lon": 112.93303292,
+        "type": "parking",
+        "tags": {
+          "amenity": "parking"
+        }
+      },
+      {
+        "osm_id": "way/1026958180",
+        "name": "",
+        "lat": 28.1542870375,
+        "lon": 112.9381163,
+        "type": "bicycle_parking",
+        "tags": {
+          "amenity": "bicycle_parking",
+          "covered": "no"
+        }
+      },
+      {
+        "osm_id": "way/1028597941",
+        "name": "",
+        "lat": 28.158790691666667,
+        "lon": 112.93319145833334,
+        "type": "parking",
+        "tags": {
+          "amenity": "parking"
+        }
+      },
+      {
+        "osm_id": "way/1028597944",
+        "name": "清水路公交首末站",
+        "lat": 28.157822557142858,
+        "lon": 112.93499518571427,
+        "type": "parking",
+        "tags": {
+          "amenity": "parking",
+          "name": "清水路公交首末站",
+          "operator": "长沙公交集团"
+        }
+      },
+      {
+        "osm_id": "way/1028640401",
+        "name": "",
+        "lat": 28.153995028571426,
+        "lon": 112.93464232857143,
+        "type": "parking",
+        "tags": {
+          "amenity": "parking"
+        }
+      },
+      {
+        "osm_id": "way/1094677907",
+        "name": "",
+        "lat": 28.160152685714284,
+        "lon": 112.93917468571429,
+        "type": "parking",
+        "tags": {
+          "amenity": "parking"
+        }
+      },
+      {
+        "osm_id": "way/1253207415",
+        "name": "",
+        "lat": 28.157363466666666,
+        "lon": 112.93591925,
+        "type": "parking",
+        "tags": {
+          "amenity": "parking"
+        }
+      },
+      {
+        "osm_id": "way/1253890260",
+        "name": "",
+        "lat": 28.15982526,
+        "lon": 112.93653784,
+        "type": "parking",
+        "tags": {
+          "amenity": "parking"
+        }
+      }
+    ],
+    "culture": [
+      {
+        "osm_id": "node/3184256906",
+        "name": "新学生事务大厅",
+        "lat": 28.1707453,
+        "lon": 112.9399503,
+        "type": "community_centre",
+        "tags": {
+          "amenity": "community_centre",
+          "name": "新学生事务大厅"
+        }
+      },
+      {
+        "osm_id": "node/3860139781",
+        "name": "新校体育场",
+        "lat": 28.1568223,
+        "lon": 112.9286506,
+        "type": "sports_centre",
+        "tags": {
+          "leisure": "sports_centre",
+          "name": "新校体育场"
+        }
+      },
+      {
+        "osm_id": "node/6910885076",
+        "name": "何润公园",
+        "lat": 28.1670086,
+        "lon": 112.9451174,
+        "type": "park",
+        "tags": {
+          "leisure": "park",
+          "name": "何润公园",
+          "operator": "何润"
+        }
+      },
+      {
+        "osm_id": "node/10020233825",
+        "name": "岳麓文化馆",
+        "lat": 28.1602004,
+        "lon": 112.9404176,
+        "type": "arts_centre",
+        "tags": {
+          "addr:city": "长沙市",
+          "addr:district": "岳麓区",
+          "addr:province": "湖南省",
+          "amenity": "arts_centre",
+          "name": "岳麓文化馆"
+        }
+      },
+      {
+        "osm_id": "way/382796824",
+        "name": "中南大学图书馆前坪",
+        "lat": 28.153413152631583,
+        "lon": 112.93778626842105,
+        "type": "unknown",
+        "tags": {
+          "leisure": "park",
+          "name": "中南大学图书馆前坪"
+        }
+      },
+      {
+        "osm_id": "way/382796825",
+        "name": "D座前坪",
+        "lat": 28.15191182857143,
+        "lon": 112.93767285047619,
+        "type": "unknown",
+        "tags": {
+          "leisure": "park",
+          "name": "D座前坪"
+        }
+      },
+      {
+        "osm_id": "way/382863571",
+        "name": "",
+        "lat": 28.158502473809524,
+        "lon": 112.93021060000001,
+        "type": "unknown",
+        "tags": {
+          "leisure": "park"
+        }
+      },
+      {
+        "osm_id": "way/585142566",
+        "name": "荫马塘体育场",
+        "lat": 28.1752588875,
+        "lon": 112.94024605,
+        "type": "unknown",
+        "tags": {
+          "leisure": "stadium",
+          "name": "荫马塘体育场",
+          "sport": "basketball;tennis;badminton"
+        }
+      },
+      {
+        "osm_id": "way/791601357",
+        "name": "",
+        "lat": 28.174763719999998,
+        "lon": 112.92574728,
+        "type": "unknown",
+        "tags": {
+          "leisure": "park"
+        }
+      },
+      {
+        "osm_id": "way/966198401",
+        "name": "",
+        "lat": 28.158322875757577,
+        "lon": 112.93042128181818,
+        "type": "unknown",
+        "tags": {
+          "leisure": "stadium"
+        }
+      },
+      {
+        "osm_id": "way/983563026",
+        "name": "后湖国际艺术区",
+        "lat": 28.161641447058823,
+        "lon": 112.93747785294117,
+        "type": "unknown",
+        "tags": {
+          "leisure": "park",
+          "name": "后湖国际艺术区"
+        }
+      },
+      {
+        "osm_id": "way/983566660",
+        "name": "湖南省美术馆",
+        "lat": 28.156101149999998,
+        "lon": 112.94403351250001,
+        "type": "yes",
+        "tags": {
+          "building": "yes",
+          "name": "湖南省美术馆",
+          "tourism": "gallery",
+          "wikidata": "Q124884508",
+          "wikipedia": "zh:湖南美术馆"
+        }
+      },
+      {
+        "osm_id": "way/1035580113",
+        "name": "天麓苑社区公园",
+        "lat": 28.1736542,
+        "lon": 112.94707884999998,
+        "type": "unknown",
+        "tags": {
+          "leisure": "park",
+          "name": "天麓苑社区公园"
+        }
+      },
+      {
+        "osm_id": "way/1094091328",
+        "name": "",
+        "lat": 28.15735442727273,
+        "lon": 112.94011250454545,
+        "type": "unknown",
+        "tags": {
+          "leisure": "park"
+        }
+      },
+      {
+        "osm_id": "way/1094091352",
+        "name": "",
+        "lat": 28.157517563157896,
+        "lon": 112.9389757,
+        "type": "unknown",
+        "tags": {
+          "leisure": "park"
+        }
+      },
+      {
+        "osm_id": "way/1094091353",
+        "name": "",
+        "lat": 28.15787409375,
+        "lon": 112.93924425625,
+        "type": "unknown",
+        "tags": {
+          "leisure": "park"
+        }
+      },
+      {
+        "osm_id": "way/1094105672",
+        "name": "T当代艺术中心",
+        "lat": 28.164462000000004,
+        "lon": 112.94243544000001,
+        "type": "yes",
+        "tags": {
+          "amenity": "arts_centre",
+          "building": "yes",
+          "name": "T当代艺术中心"
+        }
+      },
+      {
+        "osm_id": "way/1184149788",
+        "name": "",
+        "lat": 28.160595233333332,
+        "lon": 112.92755987777778,
+        "type": "unknown",
+        "tags": {
+          "leisure": "stadium"
+        }
+      }
+    ]
+  }
+}

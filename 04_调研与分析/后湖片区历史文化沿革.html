@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>后湖片区 · 历史文化沿革</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  font-family:'Microsoft YaHei','PingFang SC',sans-serif;
+  background:#F5F0EB;color:#2c2c2c;overflow-x:hidden;
+}
+.header{
+  text-align:center;padding:50px 20px 30px;
+  background:linear-gradient(180deg,#E8DCC8 0%,#F5F0EB 100%);
+  position:relative;
+}
+.header::after{
+  content:'';position:absolute;bottom:0;left:10%;right:10%;
+  height:1px;background:linear-gradient(90deg,transparent,#c4a882,transparent);
+}
+.header h1{
+  font-size:32px;letter-spacing:6px;color:#5A3E2B;display:inline-block;
+}
+.header h1::before{content:'◆';font-size:18px;margin-right:12px;color:#B8860B;vertical-align:middle}
+.header h1::after{content:'◆';font-size:18px;margin-left:12px;color:#B8860B;vertical-align:middle}
+.header .subtitle{font-size:14px;color:#8B7355;margin-top:8px;letter-spacing:3px;}
+.header .tagline{font-size:13px;color:#a0907a;margin-top:6px;display:flex;justify-content:center;gap:20px;flex-wrap:wrap}
+.overview-tags{display:flex;justify-content:center;gap:14px;padding:20px;flex-wrap:wrap;background:#F5F0EB;}
+.otag{padding:7px 18px;border-radius:20px;font-size:13px;font-weight:bold;letter-spacing:1px;border:2px solid;cursor:default}
+.otag.heritage{border-color:#8B4513;color:#8B4513;background:rgba(139,69,19,0.06)}
+.otag.intangible{border-color:#B8860B;color:#B8860B;background:rgba(184,134,11,0.06)}
+.otag.academy{border-color:#2F4F4F;color:#2F4F4F;background:rgba(47,79,79,0.06)}
+.otag.education{border-color:#4A6741;color:#4A6741;background:rgba(74,103,65,0.06)}
+.timeline{position:relative;max-width:1280px;margin:0 auto;padding:40px 20px 60px}
+.timeline::before{content:'';position:absolute;left:50%;top:0;bottom:0;width:3px;background:linear-gradient(180deg,transparent,#c4a882 5%,#c4a882 95%,transparent);transform:translateX(-50%);z-index:0}
+.era{position:relative;display:flex;margin-bottom:50px;z-index:1}
+.era:nth-child(odd){flex-direction:row}.era:nth-child(even){flex-direction:row-reverse}
+.era::before{
+  content:attr(data-year);position:absolute;left:50%;top:20px;transform:translateX(-50%);
+  width:70px;height:70px;background:linear-gradient(135deg,#8B6914,#B8860B);color:#fff;
+  border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;
+  font-weight:bold;z-index:2;box-shadow:0 4px 15px rgba(139,105,20,0.3);border:3px solid #F5F0EB;
+  text-align:center;line-height:1.2;padding:2px;
+}
+.era-card{width:42%;background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,0.08);transition:transform .3s,box-shadow .3s}
+.era-card:hover{transform:translateY(-4px);box-shadow:0 8px 30px rgba(0,0,0,0.12)}
+.era-img{height:200px;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center}
+.era-img .img-icon{font-size:60px;opacity:0.3;position:absolute;right:-5px;bottom:-10px;transform:rotate(-10deg)}
+.era-img .img-label{color:rgba(255,255,255,0.92);font-size:15px;font-weight:bold;letter-spacing:2px;z-index:1;text-shadow:0 2px 8px rgba(0,0,0,0.3);text-align:center;padding:0 10px}
+.era.ancient .era-img{background:linear-gradient(135deg,#3E2C1B,#6B4226,#8B6914)}
+.era.industrial .era-img{background:linear-gradient(135deg,#2C1810,#5C3A28,#8B4513)}
+.era.transition .era-img{background:linear-gradient(135deg,#3A4A3F,#5A7A5A,#7A9A6A)}
+.era.modern .era-img{background:linear-gradient(135deg,#1A3A5C,#2A5A7C,#3A7A9C)}
+.era-img .dot-grid{position:absolute;top:0;left:0;right:0;bottom:0;background-image:radial-gradient(circle,rgba(255,255,255,0.1) 1px,transparent 1px);background-size:20px 20px}
+.era-img .deco-line{position:absolute;height:2px;width:60%;background:rgba(255,255,255,0.15);top:25px;left:50%;transform:translateX(-50%)}
+.era-body{padding:20px}
+.era-body h2{font-size:17px;margin-bottom:6px;letter-spacing:1px}
+.era-body h2 .year-range{font-size:12px;font-weight:normal;opacity:0.6;margin-left:6px}
+.era-body .era-tags{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px}
+.era-body .era-tag{padding:2px 10px;border-radius:10px;font-size:11px;background:#f0ebe4;color:#6a5a4a}
+.era-body p{font-size:13px;line-height:1.7;color:#555;margin-bottom:6px}
+.era-body .key-points{list-style:none;margin-top:6px}
+.era-body .key-points li{font-size:12px;color:#666;padding:4px 0 4px 16px;position:relative;line-height:1.5}
+.era-body .key-points li::before{content:'▸';position:absolute;left:0;color:#B8860B;font-weight:bold}
+.era-card .stripe{height:4px;display:flex}
+.era-card .stripe span{flex:1}
+.stripe-1{background:#8B4513}.stripe-2{background:#B8860B}.stripe-3{background:#2F4F4F}.stripe-4{background:#4A6741}
+.footer-summary{max-width:900px;margin:0 auto 60px;padding:30px 40px;background:linear-gradient(135deg,#fff,#faf6f0);border-radius:12px;box-shadow:0 4px 20px rgba(0,0,0,0.06);text-align:center;border:1px solid #e8ddd0}
+.footer-summary h3{font-size:16px;color:#5A3E2B;margin-bottom:12px;letter-spacing:2px}
+.footer-summary p{font-size:14px;color:#666;line-height:1.8}
+.footer-summary .highlight{display:inline-block;padding:3px 14px;background:#8B6914;color:#fff;border-radius:4px;font-weight:bold;font-size:13px;margin:4px}
+@media(max-width:900px){
+  .era{flex-direction:column!important;margin-bottom:70px}.era-card{width:100%}
+  .era::before{left:20px;top:0;width:60px;height:60px;font-size:11px}
+  .timeline::before{left:50px}.era-card{margin-left:40px}.header h1{font-size:24px}
+}
+@media print{.era-card:hover{transform:none;box-shadow:0 4px 20px rgba(0,0,0,0.08)}}
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>历史文化沿革</h1>
+  <div class="subtitle">后湖片区 · 从千年文脉到创意高地</div>
+  <div class="tagline">
+    <span>湖湘文脉发祥地</span>
+    <span>工业文明见证地</span>
+    <span>城市更新示范地</span>
+  </div>
+</div>
+<div class="overview-tags">
+  <span class="otag heritage">文化遗存</span>
+  <span class="otag intangible">非物质文化遗产</span>
+  <span class="otag academy">书院文化</span>
+  <span class="otag education">科教文脉</span>
+</div>
+<div class="timeline">
+  
+  <div class="era ancient" data-year="宋代~清">
+    <div class="era-card">
+      <div class="era-img">
+        <div class="dot-grid"></div>
+        <div class="deco-line"></div>
+        <div class="img-label">岳麓书院 · 湖湘文脉</div>
+        <div class="img-icon">书</div>
+      </div>
+      <div class="stripe"><span class="stripe-3"></span><span class="stripe-1"></span><span class="stripe-4"></span></div>
+      <div class="era-body">
+        <h2>古代 · 湖湘文脉发祥 <span class="year-range">宋代—清代</span></h2>
+        <div class="era-tags">
+          <span class="era-tag">书院文化</span><span class="era-tag">文化遗存</span><span class="era-tag">传统民居</span>
+        </div>
+        <p>后湖所在区域自古便是岳麓书院"湘江西岸"文化圈的重要组成部分。南宋时期岳麓书院位列中国四大书院之一，湖湘文化在此发源并传承千年。</p>
+        <ul class="key-points">
+          <li>岳麓书院 — 南宋四大书院之一，"经世致用"理念影响千年</li>
+          <li>清代传统民居 — 原后湖村核心区，约占建筑3%，部分已损毁</li>
+          <li>湖湘文化"经世致用"的学术传统深刻影响后湖地区文化气质</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="era industrial" data-year="1950~1990">
+    <div class="era-card">
+      <div class="era-img">
+        <div class="dot-grid"></div>
+        <div class="deco-line"></div>
+        <div class="img-label">工业文明 · 曙光电子厂</div>
+        <div class="img-icon">工</div>
+      </div>
+      <div class="stripe"><span class="stripe-1"></span><span class="stripe-2"></span><span class="stripe-1"></span></div>
+      <div class="era-body">
+        <h2>近现代 · 工业文明兴起 <span class="year-range">1950s—1990s</span></h2>
+        <div class="era-tags">
+          <span class="era-tag">工业遗存</span><span class="era-tag">红砖建筑</span><span class="era-tag">铁路专线</span>
+        </div>
+        <p>长沙工业文明的重要见证地。曙光电子厂（1970年代）红砖厂房、车间、宿舍至今大量保留，老铁路专用线（1960年代）遗迹尚存。1980-2000年建筑占比最高（约40%）。</p>
+        <ul class="key-points">
+          <li>曙光电子厂 — 1970年代红砖厂房，已改造为艺术工作室</li>
+          <li>老铁路专用线遗迹 — 1960年代，铁轨已拆，路基尚存</li>
+          <li>工业遗存约占建筑25%，具有重要历史文化价值</li>
+          <li>红砖工业风貌区 — 保留红砖厂房、烟囱等工业遗存</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="era transition" data-year="2000~2015">
+    <div class="era-card">
+      <div class="era-img">
+        <div class="dot-grid"></div>
+        <div class="deco-line"></div>
+        <div class="img-label">城中村改造 · 艺术导入</div>
+        <div class="img-icon">改</div>
+      </div>
+      <div class="stripe"><span class="stripe-4"></span><span class="stripe-3"></span><span class="stripe-2"></span></div>
+      <div class="era-body">
+        <h2>转型期 · 城中村改造 <span class="year-range">2000s—2015</span></h2>
+        <div class="era-tags">
+          <span class="era-tag">城中村改造</span><span class="era-tag">艺术导入</span><span class="era-tag">环境整治</span>
+        </div>
+        <p>后湖片区从典型的"城中村"（后湖村）开始转型。长沙市政府启动环境整治和产业升级，从"脏乱差"向"城市客厅"转变，引入艺术设计、文化创意类企业。</p>
+        <ul class="key-points">
+          <li>后湖村 — 典型的"城中村"，开始系统性改造</li>
+          <li>环境整治 — 后湖水面约39公顷，生态核心价值被重视</li>
+          <li>艺术导入 — 引入设计、文创类企业，逐步形成后湖设计创意园</li>
+          <li>非物质文化遗产 — 传统工艺、民间艺术面临传承与活化的课题</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="era modern" data-year="2016~至今">
+    <div class="era-card">
+      <div class="era-img">
+        <div class="dot-grid"></div>
+        <div class="deco-line"></div>
+        <div class="img-label">后湖设计创意园 · 科教文脉</div>
+        <div class="img-icon">创</div>
+      </div>
+      <div class="stripe"><span class="stripe-2"></span><span class="stripe-4"></span><span class="stripe-3"></span></div>
+      <div class="era-body">
+        <h2>新时代 · 创意新高地 <span class="year-range">2016—至今</span></h2>
+        <div class="era-tags">
+          <span class="era-tag">设计创意园</span><span class="era-tag">科教文脉</span><span class="era-tag">城市客厅</span>
+        </div>
+        <p>后湖设计创意园已成为长沙文创产业新地标。周边高校（中南/湖大/师大）20万师生提供持续创新活力，科教文脉在此延续。书院文化当代传承，建议设立"后湖书院"定期举办文化讲座。</p>
+        <ul class="key-points">
+          <li>后湖设计创意园 — 长沙文创产业新地标，艺术/设计企业聚集</li>
+          <li>书院文化当代传承 — 建议设立"后湖书院"，定期举办文化讲座</li>
+          <li>科教资源整合 — 与岳麓书院合作共建"书院文化研学基地"</li>
+          <li>"城市客厅"定位 — 植入文化、旅游、休闲功能</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="footer-summary">
+  <h3>—— 后湖片区的历史文化价值 ——</h3>
+  <p>
+    <span class="highlight">湖湘文脉的发祥地之一</span>
+    <span class="highlight">长沙工业文明的见证地</span>
+    <span class="highlight">当代城市更新的示范地</span>
+  </p>
+  <p style="margin-top:12px;font-size:13px;color:#8a7a6a">
+    从岳麓书院的千年文脉，到曙光电子厂的工业记忆，再到后湖设计创意园的创意新生<br>
+    规划应做到"在保护中利用，在利用中传承"
+  </p>
+</div>
+
+</body>
+</html>

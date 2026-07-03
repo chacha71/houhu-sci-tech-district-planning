@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>后湖片区 · 规划概念框架</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  font-family:'Microsoft YaHei','PingFang SC',sans-serif;
+  background:#F5F5F5;
+  padding:20px;
+  display:flex;flex-direction:column;align-items:center;
+}
+.page{
+  max-width:1200px;width:100%;
+  background:#fff;
+  border-radius:8px;
+  box-shadow:0 2px 20px rgba(0,0,0,0.08);
+  overflow:hidden;
+}
+
+/* ===== 顶部标题 ===== */
+.header{
+  background:#2D2D2D;
+  color:#fff;padding:18px 30px;
+  display:flex;align-items:center;gap:15px;
+}
+.header .bar{width:5px;height:28px;background:#E74C3C}
+.header h1{font-size:22px;font-weight:bold;letter-spacing:2px}
+.header h1 span{font-weight:normal;font-size:14px;opacity:0.7;margin-left:10px}
+
+/* ===== 主框架区 ===== */
+.framework{
+  display:flex;
+  padding:25px 20px 30px;
+  gap:0;
+}
+
+/* 左侧层级栏 */
+.level-bar{
+  width:50px;
+  display:flex;flex-direction:column;
+  background:#fff;
+}
+.level-item{
+  flex:1;
+  display:flex;align-items:center;justify-content:center;
+  writing-mode:vertical-rl;
+  text-orientation:mixed;
+  font-size:14px;font-weight:bold;letter-spacing:3px;
+  color:#fff;
+  border-right:1px solid #fff;
+}
+.level-item.level1{background:#4A7C59}
+.level-item.level2{background:#5A8C69}
+.level-item.level3{background:#6A9C79}
+
+/* 右侧内容区 */
+.content-area{
+  flex:1;
+  display:flex;flex-direction:column;
+  gap:8px;
+}
+
+/* ===== 每一行 ===== */
+.framework-row{
+  display:flex;align-items:stretch;
+  gap:15px;
+  min-height:140px;
+}
+
+/* ===== 宏观发展矛盾 ===== */
+.macro-box{
+  background:#E8F5E9;
+  border:2px solid #4CAF50;
+  border-radius:6px;
+  padding:15px 20px;
+  width:180px;
+  display:flex;flex-direction:column;justify-content:center;
+}
+.macro-box .title{
+  font-size:13px;font-weight:bold;color:#2E7D32;
+  margin-bottom:8px;
+}
+.macro-box .content{
+  font-size:12px;color:#444;line-height:1.6;
+}
+
+/* ===== 中观发展问题 ===== */
+.meso-area{
+  flex:1;
+  display:flex;flex-direction:column;
+}
+.meso-header{
+  background:#E8E8E8;
+  padding:8px 15px;
+  font-size:13px;font-weight:bold;color:#555;
+  text-align:center;
+  border-radius:4px 4px 0 0;
+  margin-bottom:10px;
+}
+.meso-row{
+  display:flex;gap:10px;flex:1;
+}
+.meso-box{
+  flex:1;
+  background:#E8F5E9;
+  border:1px solid #81C784;
+  border-radius:4px;
+  padding:12px;
+  display:flex;flex-direction:column;justify-content:center;
+}
+.meso-box .title{
+  font-size:12px;font-weight:bold;color:#2E7D32;
+  margin-bottom:5px;
+}
+.meso-box .content{
+  font-size:11px;color:#555;line-height:1.5;
+}
+
+/* ===== 微观需求 ===== */
+.micro-box{
+  width:150px;
+  background:#E8F5E9;
+  border:1px solid #81C784;
+  border-radius:4px;
+  padding:12px;
+  display:flex;flex-direction:column;justify-content:center;
+}
+.micro-box .title{
+  font-size:12px;font-weight:bold;color:#2E7D32;
+  margin-bottom:8px;
+}
+.micro-box .items{
+  display:flex;flex-wrap:wrap;gap:4px;
+}
+.micro-box .item{
+  font-size:10px;background:#fff;padding:2px 6px;
+  border-radius:3px;border:1px solid #C8E6C9;color:#388E3C;
+}
+
+/* ===== 核心概念框 ===== */
+.concept-box{
+  width:200px;
+  background:#FFF3E0;
+  border:3px solid #FF6B35;
+  border-radius:6px;
+  padding:20px;
+  display:flex;flex-direction:column;justify-content:center;
+  align-items:center;text-align:center;
+}
+.concept-box .main-title{
+  font-size:16px;font-weight:bold;color:#D84315;
+  margin-bottom:5px;
+  letter-spacing:1px;
+}
+.concept-box .sub-title{
+  font-size:12px;color:#E65100;
+  margin-bottom:10px;
+}
+.concept-box .desc{
+  font-size:11px;color:#666;line-height:1.6;
+}
+.concept-box .slogan{
+  font-size:11px;color:#FF6B35;font-weight:bold;
+  margin-top:8px;padding-top:8px;
+  border-top:1px dashed #FFB74D;
+}
+
+/* ===== 策略行 ===== */
+.strategy-area{
+  flex:1;
+  display:flex;gap:12px;
+}
+.strategy-col{
+  flex:1;
+  display:flex;flex-direction:column;
+}
+.strategy-header{
+  background:#5A8C69;
+  color:#fff;
+  padding:8px;
+  font-size:12px;font-weight:bold;
+  text-align:center;
+  border-radius:4px 4px 0 0;
+}
+.strategy-content{
+  flex:1;
+  background:#F1F8E9;
+  border:1px solid #C5E1A5;
+  border-top:none;
+  border-radius:0 0 4px 4px;
+  padding:12px;
+}
+.strategy-content .item{
+  font-size:11px;color:#444;
+  padding:4px 0;border-bottom:1px dotted #DCEDC8;
+}
+.strategy-content .item:last-child{border-bottom:none}
+
+/* ===== 核心内容 ===== */
+.core-row{
+  display:flex;gap:15px;
+}
+.core-box{
+  flex:1;
+  background:#E3F2FD;
+  border:2px solid #64B5F6;
+  border-radius:6px;
+  padding:15px;
+}
+.core-box .title{
+  font-size:13px;font-weight:bold;color:#1976D2;
+  margin-bottom:10px;
+  text-align:center;
+}
+.core-box .items{
+  display:flex;flex-wrap:wrap;gap:5px;
+}
+.core-box .item{
+  font-size:10px;background:#fff;padding:3px 8px;
+  border-radius:3px;border:1px solid #BBDEFB;color:#1565C0;
+}
+
+/* ===== 目标愿景 ===== */
+.goal-box{
+  width:200px;
+  background:#E8EAF6;
+  border:2px dashed #7986CB;
+  border-radius:6px;
+  padding:20px;
+  display:flex;flex-direction:column;justify-content:center;
+  align-items:center;text-align:center;
+}
+.goal-box .title{
+  font-size:14px;font-weight:bold;color:#3F51B5;
+  letter-spacing:2px;
+}
+.goal-box .icon{
+  font-size:24px;margin:10px 0;
+}
+.goal-box .desc{
+  font-size:11px;color:#666;
+}
+
+/* ===== 连接箭头 ===== */
+.arrow-right{
+  display:flex;align-items:center;
+  color:#999;font-size:20px;padding:0 5px;
+}
+.arrow-down{
+  display:flex;justify-content:center;
+  color:#999;font-size:16px;padding:5px 0;
+}
+
+/* ===== 连接线 ===== */
+.connector-h{
+  position:relative;
+  height:2px;
+  background:#81C784;
+  margin:10px 0;
+}
+.connector-v{
+  position:absolute;
+  width:2px;
+  background:#81C784;
+  top:-10px;bottom:-10px;
+}
+
+/* ===== 图例 ===== */
+.legend{
+  padding:15px 30px;
+  background:#FAFAFA;
+  border-top:1px solid #E0E0E0;
+  display:flex;gap:25px;flex-wrap:wrap;justify-content:center;
+}
+.legend-item{
+  display:flex;align-items:center;gap:6px;
+  font-size:12px;color:#666;
+}
+.legend-box{
+  width:20px;height:14px;border-radius:3px;
+  border:1px solid;
+}
+</style>
+</head>
+<body>
+
+<div class="page">
+  <div class="header">
+    <div class="bar"></div>
+    <h1>规划概念框架 <span>后湖片区城市更新设计</span></h1>
+  </div>
+
+  <div class="framework">
+    <!-- 左侧层级栏 -->
+    <div class="level-bar">
+      <div class="level-item level1">发现问题</div>
+      <div class="level-item level2">概念提出</div>
+      <div class="level-item level3">核心内容</div>
+    </div>
+
+    <!-- 右侧内容 -->
+    <div class="content-area">
+      
+      <!-- 第1行：发现问题 -->
+      <div class="framework-row">
+        <div class="macro-box">
+          <div class="title">宏观发展矛盾</div>
+          <div class="content">区域无核心统领<br>后湖与湘江割裂<br>产城人融合不足</div>
+        </div>
+        
+        <div class="meso-area">
+          <div class="meso-header">中观发展问题</div>
+          <div class="meso-row">
+            <div class="meso-box">
+              <div class="title">产业同质化竞争</div>
+              <div class="content">文创业态超60%<br>缺乏差异化定位</div>
+            </div>
+            <div class="meso-box">
+              <div class="title">空间碎片化分布</div>
+              <div class="content">功能混杂<br>闲置资源多</div>
+            </div>
+            <div class="meso-box">
+              <div class="title">交通体系割裂</div>
+              <div class="content">断头路多<br>停车困难</div>
+            </div>
+            <div class="meso-box">
+              <div class="title">生态廊道断裂</div>
+              <div class="content">后湖与湘江<br>被道路阻隔</div>
+            </div>
+            <div class="meso-box">
+              <div class="title">产学研联动薄弱</div>
+              <div class="content">与高校互动初级<br>资源利用不足</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="micro-box">
+          <div class="title">微观需求</div>
+          <div class="items">
+            <span class="item">青年创业</span>
+            <span class="item">全龄生活</span>
+            <span class="item">生态体验</span>
+            <span class="item">智慧服务</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 第2行：概念提出 -->
+      <div class="framework-row">
+        <div class="concept-box">
+          <div class="main-title">青创绿链 · 后湖客厅</div>
+          <div class="sub-title">青年创新 × 生态绿链 × 城市客厅</div>
+          <div class="desc">突破传统产业空间限制<br>构建多层次立体城市结构</div>
+          <div class="slogan">以绿为链 · 产城融合 · 全龄共享</div>
+        </div>
+        
+        <div class="arrow-right">→</div>
+        
+        <div class="strategy-area">
+          <div class="strategy-col">
+            <div class="strategy-header">产业赋能升级</div>
+            <div class="strategy-content">
+              <div class="item">差异化业态植入</div>
+              <div class="item">全产业链构建</div>
+              <div class="item">产学研合作平台</div>
+              <div class="item">青年人才安居计划</div>
+            </div>
+          </div>
+          <div class="strategy-col">
+            <div class="strategy-header">空间肌理织补</div>
+            <div class="strategy-content">
+              <div class="item">拆违留白增绿</div>
+              <div class="item">工业遗存更新</div>
+              <div class="item">功能混合开发</div>
+              <div class="item">公共空间节点塑造</div>
+            </div>
+          </div>
+          <div class="strategy-col">
+            <div class="strategy-header">蓝绿交通融合</div>
+            <div class="strategy-content">
+              <div class="item">环湖绿道贯通</div>
+              <div class="item">跨路生态廊道</div>
+              <div class="item">路网优化连通</div>
+              <div class="item">滨水岸线修复</div>
+            </div>
+          </div>
+          <div class="strategy-col">
+            <div class="strategy-header">智慧全龄服务</div>
+            <div class="strategy-content">
+              <div class="item">智慧基础设施</div>
+              <div class="item">全龄配套设施</div>
+              <div class="item">共享交流空间</div>
+              <div class="item">文化传承活化</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 第3行：核心内容 -->
+      <div class="framework-row">
+        <div class="core-box">
+          <div class="title">「一环三区」功能体系</div>
+          <div class="items">
+            <span class="item">环湖绿道串联</span>
+            <span class="item">文创核心区</span>
+            <span class="item">过渡更新区</span>
+            <span class="item">边缘居住区</span>
+          </div>
+        </div>
+        
+        <div class="arrow-right">→</div>
+        
+        <div class="goal-box">
+          <div class="title">景城产人融合示范区</div>
+          <div class="icon">🎯</div>
+          <div class="desc">景观 · 城市 · 产业 · 人文<br>四位一体融合发展</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 图例 -->
+  <div class="legend">
+    <div class="legend-item">
+      <div class="legend-box" style="background:#E8F5E9;border-color:#4CAF50"></div>
+      <span>发现问题层</span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-box" style="background:#FFF3E0;border-color:#FF6B35;border-width:2px"></div>
+      <span>核心概念</span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-box" style="background:#F1F8E9;border-color:#8BC34A"></div>
+      <span>策略体系</span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-box" style="background:#E3F2FD;border-color:#2196F3"></div>
+      <span>核心内容</span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-box" style="background:#E8EAF6;border-color:#3F51B5;border-style:dashed"></div>
+      <span>目标愿景</span>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>

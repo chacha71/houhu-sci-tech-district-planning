@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>后湖片区 · 规划概念框架</title>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  font-family:'Microsoft YaHei','PingFang SC',sans-serif;
+  background:#F0F4F8;
+  padding:30px;
+  display:flex;flex-direction:column;align-items:center;
+}
+.page{
+  max-width:1400px;width:100%;
+  background:#fff;border-radius:16px;
+  box-shadow:0 4px 30px rgba(0,0,0,0.08);
+  overflow:hidden;
+}
+.top-banner{
+  background:linear-gradient(135deg,#1A3A5C,#2A5A7C);
+  color:#fff;padding:28px 40px 24px;
+  text-align:center;position:relative;overflow:hidden;
+}
+.top-banner::after{
+  content:'';position:absolute;top:-40%;right:-10%;
+  width:350px;height:350px;
+  background:rgba(255,107,53,0.06);border-radius:50%;
+}
+.top-banner h1{font-size:24px;letter-spacing:4px;position:relative;z-index:1}
+.top-banner h1 small{font-size:13px;font-weight:normal;opacity:0.7;margin-left:10px;letter-spacing:1px}
+.top-banner .sub{font-size:13px;opacity:0.8;margin-top:5px;letter-spacing:2px;position:relative;z-index:1}
+.top-banner .tagline{
+  display:flex;justify-content:center;gap:20px;margin-top:10px;flex-wrap:wrap;position:relative;z-index:1;
+}
+.top-banner .tagline span{
+  padding:3px 14px;border:1px solid rgba(255,255,255,0.2);
+  border-radius:12px;font-size:11px;letter-spacing:1px;background:rgba(255,255,255,0.05);
+}
+.mermaid-wrapper{
+  padding:30px 30px 20px;
+  overflow-x:auto;
+}
+.mermaid-wrapper svg{max-width:100%;height:auto;}
+.footer-note{
+  padding:15px 30px 20px;
+  text-align:center;font-size:12px;color:#999;
+  border-top:1px solid #eee;
+}
+.legend-tags{
+  display:flex;justify-content:center;gap:20px;flex-wrap:wrap;
+  padding:0 30px 20px;
+}
+.legend-tags .lt{
+  display:flex;align-items:center;gap:6px;font-size:12px;color:#666;
+}
+.legend-tags .lt .swatch{
+  width:14px;height:14px;border-radius:3px;border:1px solid #ddd;
+}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="top-banner">
+    <h1>规划概念框架 <small>后湖片区城市更新设计</small></h1>
+    <div class="sub">青创绿链 · 后湖客厅 — 以绿为链 · 产城融合 · 全龄共享</div>
+    <div class="tagline">
+      <span>发现问题</span>
+      <span>概念提出</span>
+      <span>核心内容</span>
+      <span>目标愿景</span>
+    </div>
+  </div>
+
+  <div class="legend-tags">
+    <div class="lt"><span class="swatch" style="background:#e8f4e8;border-color:#66bb66"></span> 现状问题层</div>
+    <div class="lt"><span class="swatch" style="background:#fff2f2;border-color:#cc3333"></span> 核心概念</div>
+    <div class="lt"><span class="swatch" style="background:#f0f8f0;border-color:#66bb66"></span> 策略/内容</div>
+    <div class="lt"><span class="swatch" style="background:#f0f8f0;border-color:#66bb66;border-style:dashed"></span> 目标愿景</div>
+  </div>
+
+  <div class="mermaid-wrapper">
+    <pre class="mermaid">
+%%{init: {
+  'theme': 'base',
+  'themeVariables': {
+    'background': '#ffffff',
+    'primaryColor': '#e8f4e8',
+    'primaryTextColor': '#2c3e50',
+    'primaryBorderColor': '#66bb66',
+    'lineColor': '#666',
+    'secondaryColor': '#fff2f2',
+    'tertiaryColor': '#f0f8f0',
+    'fontSize': '13px',
+    'fontFamily': '"Microsoft YaHei","PingFang SC",sans-serif'
+  },
+  'flowchart': {
+    'nodeSpacing': 30,
+    'rankSpacing': 50,
+    'curve': 'basis'
+  }
+}}%%
+flowchart LR
+    %% 样式定义
+    classDef macro fill:#e8f4e8,stroke:#66bb66,stroke-width:2px,color:#2c3e50
+    classDef meso fill:#e8f4e8,stroke:#66bb66,stroke-width:2px,color:#2c3e50
+    classDef micro fill:#e8f4e8,stroke:#66bb66,stroke-width:2px,color:#2c3e50
+    classDef concept fill:#fff2f2,stroke:#cc3333,stroke-width:3px,color:#8b0000
+    classDef strategy fill:#e8f4e8,stroke:#66bb66,stroke-width:2px,color:#2c3e50
+    classDef core fill:#f0f8f0,stroke:#66bb66,stroke-width:2px,color:#2c3e50
+    classDef goal fill:#f0f8f0,stroke:#66bb66,stroke-width:2px,stroke-dasharray:5 5,color:#1a6b1a
+
+    %% 第一列：发现问题
+    subgraph 发现问题
+        direction TB
+        A[宏观发展矛盾<br>区域无核心统领]:::macro
+        B[中观发展问题]:::meso
+        B1[产业同质化竞争]:::meso
+        B2[空间碎片化分布]:::meso
+        B3[交通体系割裂]:::meso
+        B4[生态廊道断裂]:::meso
+        B5[产学研联动薄弱]:::meso
+        C[微观需求]:::micro
+        C1[青年创业需求]:::micro
+        C2[全龄生活需求]:::micro
+        C3[生态体验需求]:::micro
+        C4[智慧服务需求]:::micro
+
+        A --> B
+        B --> B1 & B2 & B3 & B4 & B5
+        B --> C
+        C --> C1 & C2 & C3 & C4
+    end
+
+    %% 第二列：概念提出
+    subgraph 概念提出
+        direction TB
+        D[青创绿链·后湖客厅<br>以绿为链·产城融合·全龄共享]:::concept
+        E[产业赋能升级]:::strategy
+        F[空间肌理织补]:::strategy
+        G[蓝绿交通融合]:::strategy
+        H[智慧全龄服务]:::strategy
+
+        D --> E & F & G & H
+    end
+
+    %% 第三列：核心内容
+    subgraph 核心内容
+        direction TB
+        I[「一环三区」功能体系<br>环湖绿道串联三大功能片区]:::core
+        E1[差异化业态<br>全产业链构建<br>产学研平台<br>人才安居]:::core
+        F1[拆违留白<br>建筑更新<br>功能混合<br>节点塑造]:::core
+        G1[绿道贯通<br>跨路廊道<br>路网优化<br>岸线修复]:::core
+        H1[智慧设施<br>全龄配套<br>共享空间<br>文化传承]:::core
+        J[景城产人融合示范区]:::goal
+
+        I --> E1 & F1 & G1 & H1
+        E1 & F1 & G1 & H1 --> J
+    end
+
+    %% 箭头连接
+    A --> D
+    B1 & B5 --> E
+    B2 --> F
+    B3 & B4 --> G
+    C1 & C2 & C3 & C4 --> H
+    E --> E1
+    F --> F1
+    G --> G1
+    H --> H1
+    </pre>
+  </div>
+
+  <div class="footer-note">
+    概念框架：青创绿链·后湖客厅 | 逻辑主线：发现问题 → 概念提出 → 核心内容 → 目标愿景
+  </div>
+</div>
+
+<script>
+mermaid.initialize({
+  startOnLoad: true,
+  theme: 'base',
+  themeVariables: {
+    background: '#ffffff',
+    primaryColor: '#e8f4e8',
+    primaryTextColor: '#2c3e50',
+    primaryBorderColor: '#66bb66',
+    lineColor: '#666',
+    secondaryColor: '#fff2f2',
+    tertiaryColor: '#f0f8f0',
+    fontSize: '13px',
+    fontFamily: '"Microsoft YaHei","PingFang SC",sans-serif'
+  },
+  flowchart: {
+    nodeSpacing: 30,
+    rankSpacing: 50,
+    curve: 'basis',
+    useMaxWidth: true
+  }
+});
+</script>
+</body>
+</html>
